@@ -35,7 +35,7 @@ O site utilizado como fonte dos jogos (**romsfun.com**) possui restrições de s
 ### 🚀 Como rodar o Nexus Hub
 1. **Baixe e extraia** o arquivo ZIP do projeto.
 2. Acesse a pasta extraída (normalmente chamada `web_content`).
-3. Localize e execute o arquivo **`nexus.bat`**.
+3. Localize e execute o arquivo **`nexus.bat`**. Se preferir, envie um atalho desse arquivo para a área de trabalho, para facilitar o acesso. Tenha em mente que o arquivo nexus.bat seria como um arquivo .exe de um programa convencional.
 
 > **Nota:** O arquivo `.bat` automatiza a inicialização do ambiente, executando o comando `npx electron .` de forma invisível para que você não precise usar o terminal manualmente.
 
