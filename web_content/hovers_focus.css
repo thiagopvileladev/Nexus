@@ -1,0 +1,170 @@
+#search input:focus{
+    outline: none;
+}
+
+#headerNav button:focus, #headerNav button:hover, #headerMenu:focus, #headerMenu:hover, #searchBack:hover, #searchBack:focus,#playGameBack:focus,#searchPs2HolderBack:focus, #playGameBack:hover, #searchPs1HolderBack:hover,#searchPs2HolderBack:hover,#searchPs3HolderBack:hover, #searchPs3HolderBack:focus,#searchXbox360HolderBack:hover, #searchXbox360HolderBack:focus,.menuButton:focus, .menuButton:hover, #frameHolderBack:hover, #frameHolderBack:focus, #cancelarDownloadWarningBoxHolderButton1:hover, #cancelarDownloadWarningBoxHolderButton2:hover, #cancelarDownloadWarningBoxHolderButton1:focus, #cancelarDownloadWarningBoxHolderButton2:focus, #cancelarDownloadWarning2BoxHolderButton1:hover, #cancelarDownloadWarning2BoxHolderButton2:hover, #cancelarDownloadWarning2BoxHolderButton1:focus, #cancelarDownloadWarning2BoxHolderButton2:focus, #configBackButton:hover, #configBackButton:focus, #libraryBack:hover, #libraryBack:focus, #playGameBackLibrary:hover, #playGameBackLibrary:focus, #desinstalarTelaBoxHolderButtonNao:hover, #desinstalarTelaBoxHolderButtonNao:focus, #desinstalarTelaBoxHolderButtonSim:hover, #desinstalarTelaBoxHolderButtonSim:focus, #menuExitTelaNao:hover, #menuExitTelaNao:focus, #menuExitTelaSim:hover, #menuExitTelaSim:focus, #searchPs1HolderBack:hover, #searchPs1HolderBack:focus{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 15px 0px red;
+    outline: none;
+}
+
+#volume-slider:focus{
+    outline: 3px solid red;
+}
+
+.searchPlataformsButton:focus, .searchPlataformsButton:hover{
+    box-shadow: 0px 0px 15px 0px red;
+    outline: none;
+    border: 2px solid red;   
+}
+
+.desinstalar:focus{
+    box-shadow: 0px 0px 15px 0px red;
+    outline: 2px solid red;
+    border: none;   
+}
+
+.card:focus, .card:hover, .libraryPs1Card:focus, .libraryPs1Card:hover{
+    outline: none;
+    box-shadow: 0px 0px 10px 5px red;
+    border: 2px solid red;
+}
+
+.configSoundBoxCard:hover, .configSoundBoxCard:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px 5px red;
+}
+
+#btnCancelar:hover, #btnCancelar:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px 5px red;
+    border: 2px solid red;
+}
+
+#configCard12:hover, #configCard13:hover, #configCard14:hover, #configCard15:hover, #configCard12:focus, #configCard13:focus, #configCard14:focus, #configCard15:focus{
+    outline: none;
+    box-shadow: 0px 0px 0px 0px transparent;
+    border: none;
+}
+
+.card:focus-within img, .card img:hover{
+    opacity: 1;
+}
+
+#configSound:hover, #configGraficos:hover, #configPlanos:hover, #configSound:focus, #configGraficos:focus, #configPlanos:focus{
+    background-color: red;
+    box-shadow: 0px 0px 10px 2px rgba(255, 0, 0, 0.562);
+    outline: none;
+}
+
+
+#playGameHolderButton11:focus, .playGameHolderButton11:hover,
+#playGameHolderButton12:focus, .playGameHolderButton12:hover,
+#playGameHolderButton13:focus, .playGameHolderButton13:hover,
+#playGameHolderButton14:focus, .playGameHolderButton14:hover,
+#playGameHolderButton15:focus, .playGameHolderButton15:hover,
+#playGameHolderButton16:focus, .playGameHolderButton16:hover,
+#playGameHolderButton17:focus, .playGameHolderButton17:hover,
+#playGameHolderButton18:focus, .playGameHolderButton18:hover,
+#playGameHolderButton19:focus, .playGameHolderButton19:hover,
+#playGameHolderButton20:focus, .playGameHolderButton20:hover,
+#playGameHolderButton21:focus, .playGameHolderButton21:hover,
+#playGameHolderButton22:focus, .playGameHolderButton22:hover,
+#playGameHolderButton23:focus, .playGameHolderButton23:hover,
+#playGameHolderButton24:focus, .playGameHolderButton24:hover,
+#playGameHolderButton25:focus, .playGameHolderButton25:hover,
+#playGameHolderButton26:focus, .playGameHolderButton26:hover,
+#playGameHolderButton27:focus, .playGameHolderButton27:hover,
+#playGameHolderButton28:focus, .playGameHolderButton28:hover,
+#playGameHolderButton29:focus, .playGameHolderButton29:hover,
+#playGameHolderButton30:focus, .playGameHolderButton30:hover,
+#playGameHolderButton31:focus, .playGameHolderButton31:hover,
+#playGameHolderButton32:focus, .playGameHolderButton32:hover,
+#playGameHolderButton33:focus, .playGameHolderButton33:hover,
+#playGameHolderButton34:focus, .playGameHolderButton34:hover,
+#playGameHolderButton35:focus, .playGameHolderButton35:hover,
+#playGameHolderButton36:focus, .playGameHolderButton36:hover,
+#playGameHolderButton37:focus, .playGameHolderButton37:hover,
+#playGameHolderButton38:focus, .playGameHolderButton38:hover,
+#playGameHolderButton39:focus, .playGameHolderButton39:hover,
+#playGameHolderButton40:focus, .playGameHolderButton40:hover,
+#playGameHolderButton41:focus, .playGameHolderButton41:hover,
+#playGameHolderButton42:focus, .playGameHolderButton42:hover,
+#playGameHolderButton43:focus, .playGameHolderButton43:hover,
+#playGameHolderButton44:focus, .playGameHolderButton44:hover,
+#playGameHolderButton45:focus, .playGameHolderButton45:hover,
+#playGameHolderButton46:focus, .playGameHolderButton46:hover,
+#playGameHolderButton47:focus, .playGameHolderButton47:hover,
+#playGameHolderButton48:focus, .playGameHolderButton48:hover,
+#playGameHolderButton49:focus, .playGameHolderButton49:hover,
+#playGameHolderButton50:focus, .playGameHolderButton50:hover,
+#playGameHolderButton51:focus, .playGameHolderButton51:hover,
+#playGameHolderButton52:focus, .playGameHolderButton52:hover,
+#playGameHolderButton53:focus, .playGameHolderButton53:hover,
+#playGameHolderButton54:focus, .playGameHolderButton54:hover,
+#playGameHolderButton55:focus, .playGameHolderButton55:hover,
+#playGameHolderButton56:focus, .playGameHolderButton56:hover,
+#playGameHolderButton57:focus, .playGameHolderButton57:hover,
+#playGameHolderButton58:focus, .playGameHolderButton58:hover,
+#playGameHolderButton59:focus, .playGameHolderButton59:hover,
+#playGameHolderButton60:focus, .playGameHolderButton60:hover {
+    box-shadow: 0px 0px 15px 0px red;
+    outline: none;
+    border: 2px solid red;    
+}
+
+
+#playGameHolderPs1Button1:focus, .playGameHolderPs1Button1:hover,
+#playGameHolderPs1Button2:focus, .playGameHolderPs1Button2:hover,
+#playGameHolderPs1Button3:focus, .playGameHolderPs1Button3:hover,
+#playGameHolderPs1Button4:focus, .playGameHolderPs1Button4:hover,
+#playGameHolderPs1Button5:focus, .playGameHolderPs1Button5:hover,
+#playGameHolderPs1Button6:focus, .playGameHolderPs1Button6:hover,
+#playGameHolderPs1Button7:focus, .playGameHolderPs1Button7:hover,
+#playGameHolderPs1Button8:focus, .playGameHolderPs1Button8:hover,
+#playGameHolderPs1Button9:focus, .playGameHolderPs1Button9:hover,
+#playGameHolderPs1Button10:focus, .playGameHolderPs1Button10:hover,
+#playGameHolderPs1Button11:focus, .playGameHolderPs1Button11:hover,
+#playGameHolderPs1Button12:focus, .playGameHolderPs1Button12:hover,
+#playGameHolderPs1Button13:focus, .playGameHolderPs1Button13:hover,
+#playGameHolderPs1Button14:focus, .playGameHolderPs1Button14:hover,
+#playGameHolderPs1Button15:focus, .playGameHolderPs1Button15:hover,
+#playGameHolderPs1Button16:focus, .playGameHolderPs1Button16:hover,
+#playGameHolderPs1Button17:focus, .playGameHolderPs1Button17:hover,
+#playGameHolderPs1Button18:focus, .playGameHolderPs1Button18:hover,
+#playGameHolderPs1Button19:focus, .playGameHolderPs1Button19:hover,
+#playGameHolderPs1Button20:focus, .playGameHolderPs1Button20:hover,
+#playGameHolderPs1Button21:focus, .playGameHolderPs1Button21:hover,
+#playGameHolderPs1Button22:focus, .playGameHolderPs1Button22:hover,
+#playGameHolderPs1Button23:focus, .playGameHolderPs1Button23:hover,
+#playGameHolderPs1Button24:focus, .playGameHolderPs1Button24:hover,
+#playGameHolderPs1Button25:focus, .playGameHolderPs1Button25:hover,
+#playGameHolderPs1Button26:focus, .playGameHolderPs1Button26:hover,
+#playGameHolderPs1Button27:focus, .playGameHolderPs1Button27:hover,
+#playGameHolderPs1Button28:focus, .playGameHolderPs1Button28:hover,
+#playGameHolderPs1Button29:focus, .playGameHolderPs1Button29:hover,
+#playGameHolderPs1Button30:focus, .playGameHolderPs1Button30:hover,
+#playGameHolderPs1Button31:focus, .playGameHolderPs1Button31:hover,
+#playGameHolderPs1Button32:focus, .playGameHolderPs1Button32:hover,
+#playGameHolderPs1Button33:focus, .playGameHolderPs1Button33:hover,
+#playGameHolderPs1Button34:focus, .playGameHolderPs1Button34:hover,
+#playGameHolderPs1Button35:focus, .playGameHolderPs1Button35:hover,
+#playGameHolderPs1Button36:focus, .playGameHolderPs1Button36:hover,
+#playGameHolderPs1Button37:focus, .playGameHolderPs1Button37:hover,
+#playGameHolderPs1Button38:focus, .playGameHolderPs1Button38:hover,
+#playGameHolderPs1Button39:focus, .playGameHolderPs1Button39:hover,
+#playGameHolderPs1Button40:focus, .playGameHolderPs1Button40:hover,
+#playGameHolderPs1Button41:focus, .playGameHolderPs1Button41:hover,
+#playGameHolderPs1Button42:focus, .playGameHolderPs1Button42:hover,
+#playGameHolderPs1Button43:focus, .playGameHolderPs1Button43:hover,
+#playGameHolderPs1Button44:focus, .playGameHolderPs1Button44:hover,
+#playGameHolderPs1Button45:focus, .playGameHolderPs1Button45:hover,
+#playGameHolderPs1Button46:focus, .playGameHolderPs1Button46:hover,
+#playGameHolderPs1Button47:focus, .playGameHolderPs1Button47:hover,
+#playGameHolderPs1Button48:focus, .playGameHolderPs1Button48:hover,
+#playGameHolderPs1Button49:focus, .playGameHolderPs1Button49:hover,
+#playGameHolderPs1Button50:focus, .playGameHolderPs1Button50:hover {
+    box-shadow: 0px 0px 15px 0px red;
+    outline: none;
+    border: 2px solid red;    
+}

@@ -1,0 +1,1447 @@
+body{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Esconde a barra de rolagem em navegadores baseados em Webkit (Chrome, Edge, Electron) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Garante que a rolagem continue funcionando */
+body {
+  -ms-overflow-style: none;  /* IE e Edge antigo */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+/*ABSTRATOS*/
+
+#telaTeste{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.955);
+    z-index: 9999999999999999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@property --percent {
+            syntax: '<integer>';
+            initial-value: 0;
+            inherits: false;
+}
+
+        svg {
+            width: 200px;
+            height: 200px;
+            transform: rotate(-90deg); /* Começa do topo */
+        }
+
+        circle {
+            fill: none;
+            stroke-width: 15;
+            stroke-linecap: round;
+        }
+
+        .bg {
+            stroke: #ffffff;
+        }
+
+        .progress {
+            stroke: #ff0000;
+            /* Circunferência = 2 * PI * raio 
+               2 * 3.14 * 80 = 502.4 
+            */
+            stroke-dasharray: 502.4;
+            stroke-dashoffset: 502.4;
+            animation: fillProgress 30s linear forwards;
+        }
+
+        /* Texto Central */
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            counter-reset: percentage var(--percent);
+            animation: countNumber 30s linear forwards;
+        }
+    
+
+        .percentage::after {
+            content: counter(percentage) "%";
+        }
+
+        /* ANIMAÇÕES */
+
+        /* O tempo total é 10s. 
+           50% do tempo (5s) = chega em 70% do progresso.
+           100% do tempo (10s) = chega em 100% do progresso.
+        */
+        @keyframes fillProgress {
+            0% { stroke-dashoffset: 502.4; stroke: #ff0000;}             /* 0% */
+            50% { stroke-dashoffset: 150.72; stroke: #fff200;}           /* 70% (502.4 * 0.3) */
+            100% { stroke-dashoffset: 0; stroke: #00ff04;}               /* 100% */
+        }
+
+        @keyframes countNumber {
+            0% { --percent: 0; }
+            50% { --percent: 70; }
+            100% { --percent: 100; }
+        }
+
+#extrairTela{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    color: white;
+}
+
+
+
+#extrairTela p{
+    position: absolute;
+    margin-top: 18rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+
+#menuHolder{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    transition: background-color .5s ease;
+}
+
+
+#menu{
+    background-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    width: 10rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateX(-10rem);
+    transition: .4s;
+}
+
+.menuButton{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: .35s;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.menuButtonImg{
+    width: 3rem;
+    height: 3rem;
+}
+
+#frameHolder{
+    display: flex;
+}
+
+
+
+
+#iframe{
+    width: 700px; 
+    height: 650px;
+    margin: -31rem 0 0rem 0;
+    overflow: hidden; 
+    position: absolute;
+    top: -40px;         /* Sobe o iframe 150px (mostra a parte de baixo) */
+    left: -200px;
+}
+
+#iframe2{
+    width: 700px; 
+    height: 650px;
+    margin: -19rem 0 0rem 0;
+    overflow: hidden; 
+    position: absolute;
+    top: -40px;         /* Sobe o iframe 150px (mostra a parte de baixo) */
+    left: -200px;
+}
+
+
+
+#frameHolderBack{
+    position: absolute;
+    cursor: pointer;
+    top:0;
+    left: 0;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0 0 1rem;
+    background-color: transparent;
+    border: none;
+    transition: .4s;
+}
+
+#frameHolderBack img{
+    width: 1.5rem;
+}
+
+#frameHolder{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#frame{
+    position: relative;
+    width: 300px;
+    height: 140px;
+    overflow: hidden;
+    border: 15px solid #f2f2f2;
+    display: flex;
+    background-color: white;
+}
+
+#frame2{
+    position: relative;
+    width: 300px;
+    height: 140px;
+    overflow: hidden;
+    border: 15px solid #f2f2f2;
+    display: none;
+}
+
+#warningResolution{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    z-index: 900000000000000000000;
+    display: none;
+    font-family: sans-serif;
+    font-size: 2.6rem;
+    color: yellow;
+}
+
+#background{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+#backgroundImg{
+    width: 100%;
+    opacity: 1;
+    transform-origin: center center;
+    animation: pulsar 15s linear infinite;
+}
+
+#searchPs1Holder, #searchPs2Holder, #searchPs3Holder, #searchXbox360Holder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+    z-index: 80001;
+    overflow: scroll;
+    display: none;
+}
+
+#ghost2, #ghost1{
+    display: none;
+}
+
+#searchPs1HolderBoxText, #searchPs2HolderBoxText, #searchPs3HolderBoxText, #searchXbox360HolderBoxText{
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    color:white;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#searchPs1HolderBoxText p span, #searchPs2HolderBoxText p span, #searchPs3HolderBoxText p span, #searchXbox360HolderBoxText p span{
+    color:GRAY;
+}
+
+#searchPs1HolderBar, #searchPs2HolderBar, #searchPs3HolderBar, #searchXbox360HolderBar{
+    width: 87%;
+    height: .1rem;
+    background:linear-gradient(to right, white 80%, transparent);
+}
+
+#searchPs1HolderOrder, #searchPs2HolderOrder, #searchPs3HolderOrder, #searchXbox360HolderOrder{
+    width: 30rem;
+    height: 5rem;
+    color:white;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    margin-left: 5.3rem;
+    font-size: 1.5rem;
+}
+
+.searchHolderOrderButtonSize, .searchHolderOrderButtonRate, .searchHolderOrderButtonSize{
+    background-color: rgb(26, 26, 26);
+    color:white;
+    border: 2px solid white;
+    padding: .4rem .6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 10rem;
+    transition: .35s;
+}
+
+.searchHolderOrderButtonSize:focus, .searchHolderOrderButtonRate:focus{
+    background-color: rgba(255, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px 0px red;
+    outline: none;
+}
+
+
+
+#searchPs1HolderTitle, #searchPs2HolderTitle, #searchPs3HolderTitle, #searchXbox360HolderTitle{
+    margin:2rem 0 0 0;
+    font-family: sans-serif;
+    color:white;
+    text-align: center;
+}
+
+#searchPs1HolderBox, #searchPs2HolderBox, #searchPs3HolderBox, #searchXbox360HolderBox{
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.searchPs1HolderCardHolder, .searchPs2HolderCardHolder, .searchPs3HolderCardHolder, .searchXbox360HolderCardHolder{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+#library{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, rgb(14, 14, 14), rgb(29, 29, 29));
+    z-index: 999;
+    transition: .5s;
+    display: none;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+#libraryGhost{
+    width: 100%;
+    height: 5rem;
+    display: none;
+}
+
+
+#warningLibrary{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color:rgb(179, 179, 179);
+    font-size: 2.4rem;
+    font-family: sans-serif;
+    background-color: rgba(255, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: -2;
+}
+
+#libraryIframe{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 99999999999999;
+}
+
+#libraryTitle{
+    margin: 2rem 0 3rem 0;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#libraryPs1, #libraryPs2, #libraryPs3, #libraryXbox360{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    display: none;
+}
+
+#LibraryPs1Title, #LibraryPs2Title, #LibraryPs3Title, #LibraryXbox360Title{
+    margin-left: 3.5rem;
+}
+
+#libraryTitles{
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+.libraryPs1Holder, .libraryPs2Holder, .libraryPs3Holder, .libraryXbox360Holder{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 3rem;
+    margin-left: 3.5rem;
+}
+
+.libraryPs2Holder{
+    display: none;
+}
+
+
+
+
+
+
+
+#info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    transform: translateY(-80rem);
+    transition: .5s;
+    background: linear-gradient(-45deg, rgb(14, 14, 14), rgb(29, 29, 29));
+}
+
+
+
+
+#search{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    transform: translateY(-80rem);
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(-45deg, rgb(14, 14, 14), rgb(29, 29, 29));
+}
+
+#searchBack{
+    position: absolute;
+    cursor: pointer;
+    top:0;
+    left: 0;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0 0 1rem;
+    background-color: transparent;
+    border: none;
+    transition: .4s;
+}
+
+#searchBack img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+#search input{
+    margin-top: 5rem;
+    padding: 1.4rem;
+    width: 40rem;
+    background-color: rgb(28, 28, 28);
+    border: 3px solid white;
+    border-radius: 11px;
+    color:white;
+    display: flex;
+    font-size: 1rem;
+}
+
+#search input::placeholder{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#search p{
+    color:white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-top: 3.5rem;
+}
+
+#searchPlataforms{
+    width: 70rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: opacity 0.3s ease;
+}
+
+#searchText{
+    transition: opacity 0.3s ease;
+}
+
+#searchHolder{
+    display: none;
+    width: 100%;
+    height: 30rem;
+    background-color: blue;
+}
+
+.searchPlataformsButton{
+    width: 30rem;
+    height: 10rem;
+    padding: 0;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.searchPlataformsButton img{
+    height: 100%;
+}
+
+#downloadBox{
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+}
+
+#download-container{
+    display: block;
+    width: 20rem;
+    background-color: #ccc;
+    border-radius: 2px;
+    margin-top: 10px;
+    transition: .2s;
+    overflow: hidden;
+    height: fit-content;
+}
+
+#progress-bar{
+    width: 50px;
+    height: 6.5px;
+    background-color: #ba1717;
+    text-align: center;
+    color: white;
+    transition: .2s;
+}
+
+#progressText{
+    color: rgb(255, 255, 255);
+    z-index: 100000000000000;
+    position: absolute;
+    top:0;
+    right: 50%;
+}
+
+#cancelarDownloadWarning, #cancelarDownloadWarning2, #desinstalarTela, #menuExitTela{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999999999999;
+    background-color: rgba(0, 0, 0, 0.91);
+}
+
+
+
+#cancelarDownloadWarningBox, #cancelarDownloadWarning2Box, #desinstalarTelaBox, #menuExitTelaBoxer{
+    width: 60rem;
+    height: 40rem;
+    background: linear-gradient(-45deg, rgb(7, 7, 7), rgb(20, 20, 20));
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    border-left: 3px solid rgb(32, 32, 32);
+    border-bottom: 4px solid rgb(31, 31, 31);
+    border-radius: 11px;
+}
+
+#cancelarDownloadWarningBox img, #cancelarDownloadWarning2Box img, #desinstalarTelaBox img, #menuExitTelaBoxer img{
+    width: 10rem;
+}
+
+#cancelarDownloadWarningBox p, #cancelarDownloadWarning2Box p, #desinstalarTelaBox p{
+    text-align: center;
+    margin: 0;
+}
+
+#cancelarDownloadWarningBoxHolder, #cancelarDownloadWarning2BoxHolder, #desinstalarTelaBoxHolder, #menuExitTelaHolder{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+#cancelarDownloadWarningBoxHolderButton1, #cancelarDownloadWarningBoxHolderButton2, #cancelarDownloadWarning2BoxHolderButton1, #cancelarDownloadWarning2BoxHolderButton2, #desinstalarTelaBoxHolderButtonNao, #desinstalarTelaBoxHolderButtonSim, #menuExitTelaNao, #menuExitTelaSim{
+    width: 15rem;
+    height: 4rem;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 11px;
+    transition: .35s;
+    font-size: 1.25rem;
+}
+
+
+#config{
+    background: #121212;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 30000;
+    display: none;
+    transition: .5s;    
+}
+
+
+
+
+#configLeft{
+    width: 30rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0rem;
+    border-right: 2px solid black;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+#configLeftBar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0, .8);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 2rem 2rem 0;
+    gap: 1rem;
+    z-index: 9999999999999999999;
+}
+
+#configLeftBar p{
+    margin: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+#configLeftBar img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0 0 2rem;
+    border-radius: 50%;
+    animation: rodar 10s linear infinite;
+    border: 2px solid red;
+}
+
+
+
+/* Definição do movimento */
+  @keyframes rodar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.rodarCard{
+    animation: rodar 8s linear infinite; 
+}
+
+input[type="range"] {
+  width: 110px;
+  cursor: pointer;
+  margin: 0;
+  accent-color: #ff0000;
+}
+
+/* Exemplo de estilo para o container */
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+#configSound, #configGraficos, #configPlanos{
+    width: 100%;
+    height: 5rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: .35s;
+}
+
+#configSound p, #configGraficos p, #configPlanos p{
+    margin-left: 6rem;
+}
+
+#configBack{
+    width: 100%;
+    height: 5rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#configBack p{
+    margin-left: 6rem;
+    margin-top: 1.7rem;
+}
+
+#configSoundBox, #configGraficosBox, #configPlanosBox{
+    width: calc(100% - 30rem);
+    height: 100%;
+    display: none;
+}
+
+#configSoundBox{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+#configGraficosBox{
+    background-color: #00ff04;
+}
+
+#configPlanosBox{
+    background-color: rebeccapurple;
+}
+
+
+#configSoundBox h1{
+    margin: 3rem 0 3rem 2.5rem;
+    font-family: sans-serif;
+    color: white;
+}
+
+#configSoundBoxHolder{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.configSoundBoxCard{
+    width: 15rem;
+    height: 15rem;
+    background-color:rgb(0, 0, 0);
+    border-radius: 11px;
+    border: none;
+    cursor: pointer;
+    transition: .35s;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    border-radius: 11px;
+}
+
+#configCard11{
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+
+#configCard12, #configCard13, #configCard14, #configCard15{
+    background-color: transparent;
+    cursor:default;
+}
+
+#configCard11 img, #configCard12 img, #configCard13 img, #configCard14 img, #configCard15 img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.configSoundBoxCard img{
+    width: 15rem;
+    height: 15rem;
+    transform: scale(1.15);
+    transition: .35s;
+}
+
+#configCard11 img{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 5rem;
+}
+
+#configCard11{
+    transform: scale(1);
+}
+
+#configCard1{
+    transform: scale(1);
+}
+
+#playGame, #playGameLibrary{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0);
+    z-index: 1000;
+    display: none;
+    overflow: hidden;
+    transition: .65s;
+    outline: none;
+    z-index: 80002;
+}
+
+#playGameLibrary{
+    display: none;
+    z-index: 99999999999;
+}
+
+#btnCancelar{
+    cursor: pointer;
+    z-index: 9000;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.079);
+    z-index: 999999;
+    border: none;
+    border-radius: 50%;
+    transition: .35s;
+}
+
+#btnCancelar img{
+    width: 1rem;
+    height: 1rem;
+}
+
+#playGameBack, #searchPs1HolderBack, #searchPs2HolderBack, #searchPs3HolderBack, #searchXbox360HolderBack, #configBackButton, #libraryBack, #playGameBackLibrary{
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 0 0 1.5rem;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    z-index: 2000000;
+    top:0;
+    left: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+#playGameBack img, #searchPs1HolderBack img, #searchPs2HolderBack img, #searchPs3HolderBack img,  #searchXbox360HolderBack img, #configBackButton img, #libraryBack img, #playGameBackLibrary img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#playGameHolder{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 1000000;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 0 0 0 4rem;
+}
+
+#playGameHolderTitle{
+    margin: 6rem 0 3rem 0;
+    width: 20rem;
+    height: fit-content;
+}
+
+#playGameHolderTitleImg{
+    width: 100%;
+}
+
+#playGameHolderRate{
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.35rem;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+    transition: .35s;
+}
+
+#redStar{
+    width: 2.5rem;
+}
+
+#playGameHolderRate p{
+    margin: 0;
+    padding: 0;
+}
+
+.rateGray{
+    color: rgb(181, 181, 181);
+}
+
+#playGameHolderRateYear{
+    color: rgb(255, 49, 49);
+}
+
+#imdbIcon{
+    width: 3rem;
+}
+
+#playGameHolderDesc{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: justify;
+    width: 40rem;
+    font-family: sans-serif;
+    margin-bottom: 3rem;
+    transition: .35s;
+}
+
+#playGameHolderButton, #playGameHolderButton11,#playGameHolderButton12,#playGameHolderButton13, #playGameHolderButton14, #playGameHolderButton15, #playGameHolderButton16, #playGameHolderButton17, #playGameHolderButton18, #playGameHolderButton19, #playGameHolderButton20{
+    width: 12rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+    margin-bottom: 4rem;
+    outline: none;
+}
+
+.TR{
+    width: 12rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+    margin-bottom: 4rem;
+    outline: none;
+}
+
+.TR p{
+    margin: 0;
+    transform: translateY(-.8rem);
+}
+
+#playGameHolderButton11,#playGameHolderButton12,#playGameHolderButton13, #playGameHolderButton14, #playGameHolderButton15, #playGameHolderButton16, #playGameHolderButton17, #playGameHolderButton18, #playGameHolderButton19{
+    display: none;
+}
+
+#playGameHolderButton img, #playGameHolderButton11 img, #playGameHolderButton12 img, #playGameHolderButton13 img, #playGameHolderButton14 img ,#playGameHolderButton15 img ,#playGameHolderButton16 img ,#playGameHolderButton17 img ,#playGameHolderButton18 img ,#playGameHolderButton19 img ,#playGameHolderButton20 img{
+    width: 1.5rem;
+}
+
+#playGameBlack{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: absolute;
+    z-index: 1;
+}
+
+#playGameGradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100000;
+    background: linear-gradient(to right, black, transparent 60%);
+}
+
+#playGameBackground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#headerMenu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    margin: 2.2rem 0 0 3rem;
+    border-radius: 50%;
+    padding: .5rem .7rem;
+    transition: .35s;
+}
+
+#headerMenu img{
+    width: 3rem;
+    height: 3rem;
+}
+
+#headerNav{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#headerNav button{
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: .5rem .7rem;
+    transition: .35s;
+}
+
+#headerNav img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+/*CLOCK*/
+
+.clock {
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    margin: 2.5rem 3.5rem 0 0;
+    font-family: sans-serif;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.clock .periodo {
+    font-size: 0.5em; 
+    vertical-align: top;
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+/*CARDHOLDER*/
+
+.cardHolder{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardHolderTitleBox{
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    align-items: end;
+    background-color: rgba(127, 255, 212, 0);
+    color: white;
+    font-family: sans-serif;
+}
+
+#cardHolderTitleBoxPs2{
+    align-items: start;
+    height: 6rem;
+}
+
+.cardHolderTitleBox h1{
+    width: 100%;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.cardHolderBox{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card, .libraryPs1Card, .libraryPs2Card, .libraryPs3Card, .libraryXbox360Card{
+    border: 2px solid rgba(255, 0, 0, 0.539);
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    background-color: black;
+    transition: .35s;
+    margin-bottom: 3rem;
+    border-radius: 11px;
+}
+
+.libraryPs1Card{
+    display: none;
+}
+
+.libraryPs1Card img{
+    height: 100%;
+    width: 100%;
+    transform: scale(1.03);
+}
+
+.libraryPs2Card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: .35s;
+    transform: scale(1.03);
+}
+
+.cardps2, .cardps3, .cardxbox360, .libraryPs2Card, .libraryPs3Card, .libraryXbox360Card{
+    height: 28rem;
+}
+
+
+.opacidade {
+    animation: opacidade 1s ease forwards;
+}
+
+.opacidadeWarning{
+    animation: opacidade .4s ease forwards;
+}
+
+.opacidadeDownloadBox{
+    animation: opacidadeDownloadBox 1s ease forwards;
+}
+
+.playGameAnimation{
+    animation: playGameAnimation .5s ease forwards;
+}
+
+.playGameAnimationReverse{
+    animation: playGameAnimation .5s ease forwards;
+}
+
+* {  
+  /* Impede selecionar texto */
+  user-select: none; 
+  -webkit-user-select: none;
+  
+  /* Impede arrastar imagens ou links (comum em navegadores) */
+  -webkit-user-drag: none;
+  
+  /* Melhora a renderização das fontes */
+  -webkit-font-smoothing: antialiased;
+}
+
+.testezada{
+    display: none;
+    align-items: start;
+    width: 20rem;
+    height: fit-content;
+    gap: 1rem;
+}
+
+.ps1Testezada{
+    display: none;
+    align-items: start;
+    width: 20rem;
+    height: fit-content;
+    gap: 1rem;
+}
+
+
+.desinstalar, .ps1Desinstalar{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(206, 206, 206, 0.877);
+    cursor: pointer;
+    padding: .5rem 0;
+    margin-top: .5rem;
+}
+
+
+
+.desinstalar img, .ps1Desinstalar img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.opacidadeBar{
+    animation: opacidadeBar 5s forwards;
+}
+
+
+#menuExitTelaSim, #menuExitTelaNao{
+    transition: .2s;
+}
+
+#menuExitTela{
+    background-color: transparent;
+}
+
+
+#cardd11, #cardd12, #cardd13, #cardd14, #cardd15, #cardd16, #cardd17, #cardd18, #cardd19, #cardd20, #cardd21, #cardd22, #cardd23, #cardd24, #cardd25, #cardd26, #cardd27, #cardd28, #cardd29, #cardd30, #cardd31, #cardd32, #cardd33, #cardd34, #cardd35, #cardd36, #cardd37, #cardd38, #cardd39, #cardd40, #cardd41, #cardd42, #cardd43, #cardd44, #cardd45, #cardd46, #cardd47, #cardd48, #cardd49, #cardd50, #cardd51, #cardd52, #cardd53, #cardd54, #cardd55, #cardd56, #cardd57, #cardd58, #cardd59, #cardd60{
+    display: none;
+}
+
+#card11{
+    position: relative;
+}
+
+.instalado{
+    position: fixed;
+    width: 19.2rem;
+    height: 2.5rem;
+    z-index: 99999999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.instalado p, .ps1Instalado p{
+    background-color: rgb(255, 0, 0);
+    padding: 1rem 5rem;
+    font-weight: bold;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ps1Instalado{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 14rem;
+    height: 2.8rem;
+    z-index: 999999999;
+    transform: translateX(3rem);
+    color: white;
+}
+
+
+.playGameHolderPs1Button, #playGameHolderPs1Button2{
+    width: 12rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+    margin-bottom: 4rem;
+    outline: none;
+}
+
+#ps1Testezada9{
+    display: none;
+}
+
+#ps1Mener{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999999999999999999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* Container do Loader */
+        .loader-container {
+            text-align: center;
+        }
+
+        /* O círculo de loading (spinner) */
+        .spinner {
+            border: 14px solid rgb(31, 31, 31);
+            border-left-color: #db3434;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+#cardHolderDestaquesPs3, #cardHolderDestaquesXbox360{
+    display: none;
+}
+

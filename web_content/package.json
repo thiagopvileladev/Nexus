@@ -1,0 +1,87 @@
+{
+  "name": "nexus",
+  "version": "1.0.0",
+  "description": "reuna seus jogos em um so lugar",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "7zip-bin": "^5.2.0",
+    "adm-zip": "^0.5.16",
+    "extract-zip": "^2.0.1",
+    "ini": "^6.0.0",
+    "node-7z": "^3.0.0",
+    "node-stream-zip": "^1.15.0"
+  },
+  "build": {
+    "appId": "com.nexus.launcher",
+    "productName": "Nexus Launcher",
+    "directories": {
+      "output": "dist"
+    },
+    "extraResources": [
+      {
+        "from": "ps2_emulator/",
+        "to": "ps2_emulator/"
+      },
+      {
+        "from": "duckstation/",
+        "to": "duckstation/"
+      },
+      {
+        "from": "python_bin/",
+        "to": "python_bin/"
+      },
+      "extractor.py",
+      {
+        "from": "covers/",
+        "to": "covers/"
+      },
+      {
+        "from": "backgrounds/",
+        "to": "backgrounds/"
+      },
+      {
+        "from": "play_game_logos/",
+        "to": "play_game_logos/"
+      },
+      {
+        "from": "audios/",
+        "to": "audios/"
+      },
+      {
+        "from": "icons/",
+        "to": "icons/"
+      },
+      {
+        "from": "logos/",
+        "to": "logos/"
+      },
+      {
+        "from": "background_songs/",
+        "to": "background_songs/"
+      },
+      {
+        "from": "background_songs_covers/",
+        "to": "background_songs_covers/"
+      },
+      {
+        "from": "linear_backgrounds/",
+        "to": "linear_backgrounds/"
+      }
+    ],
+    "win": {
+      "target": "portable"
+    }
+  }
+}

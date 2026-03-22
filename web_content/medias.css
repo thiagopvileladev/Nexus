@@ -1,0 +1,197 @@
+@media screen and (max-width:1825px){
+    #libraryGhost{
+        display: flex;
+    }
+
+    .instalado{
+        position: fixed;
+        width: 19.2rem;
+        height: 2.5rem;
+        transform: translateX(-2.2rem);
+    }
+
+    .instalado p{
+        background-color: rgb(0, 132, 255);
+        padding: .8rem 1.5rem;
+        font-weight: bold;
+        border-bottom-right-radius: 11px;
+        border-bottom-left-radius: 11px;
+}
+
+    .cardHolderTitleBox h1{
+        font-size: 2rem;
+    }
+
+    .card{
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 0rem;
+    }
+
+    .libraryPs1Card{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .cardHolderBox{
+    height: fit-content;
+    justify-content: center;
+    gap:2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.cardps2, .cardps3, .cardxbox360{
+    height: 21rem;
+}
+
+#destaquesPs2{
+    margin-top: 2rem;
+
+
+}
+
+#ghost2, #ghost1{
+    display: flex;
+    width: 100%;
+    height: .1rem;
+}
+
+.searchPs1HolderCardHolder{
+    margin-bottom: 3.5rem;
+}
+
+.searchPs2HolderCardHolder{
+    margin-bottom: 3.5rem;
+}
+
+#searchPs1HolderBar{
+    width: 79.5rem;
+}
+
+#searchPs1HolderOrder{
+    margin-left: 3.5rem;
+}
+
+
+
+#searchPs2HolderOrder{
+    margin-left: 3.5rem;
+}
+
+}
+
+
+@media screen and (max-width:1420px){
+    .cardHolderTitleBox h1{
+        font-size: 2rem;
+    }
+
+    .cardHolderBox{
+    height: fit-content;
+    justify-content: center;
+    gap:2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+}
+
+@media screen and (max-height:940px){
+    #sideMenu{
+        height: 50rem;
+    }
+}
+
+@media screen and (max-height:852px){
+    #sideMenu{
+        height: 43rem;
+    }
+}
+
+@media screen and (max-width: 1263px), screen and (max-height: 500px){
+    body *{
+        display: none;
+    }
+
+    #warningResolution{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        padding: 18rem 0 0 0;
+    }
+}
+
+
+@media screen and (max-width:1761px){
+
+    #playGameHolderTitle{
+    margin: 4.8rem 0 2.4rem 0;
+    width: 20rem;
+}
+
+    #playGameHolderTitleImg{
+        width: 20rem;
+    }
+
+    #playGameHolderRate{
+        width: 100%;
+        font-size: 1.6rem;
+        gap: .8rem;
+    }
+
+    #redStar{
+        width: 2.8rem;
+    }
+
+    #imdbIcon{
+        width: 4rem;
+    }
+
+    #playGameHolderDesc{
+        font-size: 1.6rem;
+        width: 80%;
+    }
+
+    #playGameHolderButton{
+        width: 12rem;
+        height: 3.2rem;
+        border-radius: 11px;
+        font-size: 1.36rem;
+        gap: .4rem;
+    }
+}
+
+@media screen and (max-width:1360px){
+    .cardHolderBox{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1500px){
+    .configSoundBoxCard{
+    width: 13rem;
+    height: 13rem;
+}
+
+.configSoundBoxCard img{
+    width: 13rem;
+    height: 13rem;
+    transform: scale(1.15);
+    transition: .35s;
+}
+}
+
+
+@media screen and (max-width:1380px){
+    .configSoundBoxCard{
+    width: 11rem;
+    height: 11rem;
+}
+
+.configSoundBoxCard img{
+    width: 11rem;
+    height: 11srem;
+    transform: scale(1.15);
+    transition: .35s;
+}
+}

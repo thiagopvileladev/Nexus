@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+.env
+
+ps2_emulator/
+duckstation/
+*.exe
+*.dll
+
+web_content/python_bin/

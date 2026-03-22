@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="hovers_focus.css">
+    <link rel="stylesheet" href="medias.css">
+    <title>Nexus - Nostalgia pura!</title>
+</head>
+<body>
+    <dvi id="telaTeste">
+        <div class="loader-container" id="loader">
+        <div class="spinner" id="spinner"></div>
+    </div>
+    </dvi>
+    <div id="ps1Mener">
+    <div class="loader-container" id="loader">
+        <div class="spinner"></div>
+    </div>
+    </div>
+   </div>
+    <div id="menuExitTela">
+        <div id="menuExitTelaBoxer" class="playGameAnimation">
+            <img src="icons/warning.webp" alt="">
+            <p>Você tem certeza que quer sair?</p>
+            <div id="menuExitTelaHolder">
+                <button id="menuExitTelaNao">NÃO</button>
+                <button id="menuExitTelaSim">SIM</button>
+            </div>
+        </div>
+    </div>
+        <div id="desinstalarTela">
+        <div id="desinstalarTelaBox" class="playGameAnimation">
+            <img src="icons/trash.png" alt="">
+            <p></p>
+            <div id="desisntalarTelaBoxHolder">
+                <button id="desinstalarTelaBoxHolderButtonNao">NÃO</button>
+                <button id="desinstalarTelaBoxHolderButtonSim">SIM</button>
+            </div>
+        </div>
+    </div>
+    <div id="cancelarDownloadWarning">
+        <div id="cancelarDownloadWarningBox">
+            <img src="icons/warning.webp" alt="">
+            <p>Você quer interromper o download?</p>
+            <div id="cancelarDownloadWarningBoxHolder">
+                <button id="cancelarDownloadWarningBoxHolderButton1">NÃO</button>
+                <button id="cancelarDownloadWarningBoxHolderButton2">SIM</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cancelarDownloadWarning2">
+        <div id="cancelarDownloadWarning2Box">
+            <img src="icons/warning.webp" alt="">
+            <p>Para sair você precisa cancelar o download. <br> Você deseja interromper o download?</p>
+            <div id="cancelarDownloadWarning2BoxHolder">
+                <button id="cancelarDownloadWarning2BoxHolderButton1">NÃO</button>
+                <button id="cancelarDownloadWarning2BoxHolderButton2">SIM</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="extrairTela">
+        <svg>
+            <circle class="bg" cx="100" cy="100" r="80"></circle>
+            <circle class="progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="percentage"></div>
+        <p>Extraindo arquivos...</p>
+    </div>
+    <div id="menuHolder">
+    <div id="menu">
+        <button class="menuButton" id="menuHome"><img src="icons/home.png" alt=""class="menuButtonImg"></button>
+        <button class="menuButton" id="menuConfig"><img src="icons/config.png" alt="" class="menuButtonImg"></button>
+        <button class="menuButton" id="menuExit"><img src="icons/exit.png" alt="" class="menuButtonImg"></button>
+    </div>
+    </div>
+    <div id="frameHolder">
+        <button id="frameHolderBack"><img src="icons/undo-alt.png" alt=""></button>
+        <div id="frame" class="playGameAnimation">
+            <iframe id="iframe" src="https://romsfun.com/download/tomb-raider-5-25613/58" frameborder="0"></iframe>
+        </div>
+        <div id="frame2" class="playGameAnimation">
+            <iframe src="" frameborder="0" id="iframe2"></iframe>
+        </div>
+    </div>
+    <div id="warningResolution">Por favor, coloque em janela maximizada ou tela cheia!</div>
+    <audio src="audios/moving-card.mp3" id="s-moving-card"></audio>
+    <audio src="audios/enter-menu.mp3" id="s-enter-menu"></audio>
+    <audio src="audios/leave-menu.mp3" id="s-leave-menu"></audio>
+    <audio src="audios/join-game.mp3" id="s-join-game"></audio>
+    <audio src="audios/leaving-game.mp3" id="s-leaving-game"></audio>
+    <audio src="audios/ping.mp3" id="s-ping"></audio>
+    <audio src="background_songs/GTA_ San Andreas - Main Theme _ Michael Hunter - _Theme from San Andreas_.mp3" id="backgroundSong" class="backgroundSong" loop></audio>
+    <div id="searchPs1Holder" class="playGameAnimation">
+        <button id="searchPs1HolderBack"><img src="icons/undo-alt.png" alt=""></button>
+        <h1 id="searchPs1HolderTitle">Jogos de Playstation 1 Disponíveis</h1>
+        <div id="searchPs1HolderBox">
+            <div id="searchPs1HolderBoxText">
+                <p>TODOS <span>(50)</span></p>
+                <div id="searchPs1HolderBar"></div>
+            </div>
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card1"><div class="ps1Instalado" id="ps1Instalado1"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card1Img"></button>
+            <button class="card" id="searchPs1Card2"><div class="ps1Instalado" id="ps1Instalado2"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card2Img"></button>
+            <button class="card" id="searchPs1Card3"><div class="ps1Instalado" id="ps1Instalado3"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card3Img"></button>
+            <button class="card" id="searchPs1Card4"><div class="ps1Instalado" id="ps1Instalado4"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card4Img"></button>
+            <button class="card" id="searchPs1Card5"><div class="ps1Instalado" id="ps1Instalado5"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card5Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card6"><div class="ps1Instalado" id="ps1Instalado6"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card6Img"></button>
+            <button class="card" id="searchPs1Card7"><div class="ps1Instalado" id="ps1Instalado7"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card7Img"></button>
+            <button class="card" id="searchPs1Card8"><div class="ps1Instalado" id="ps1Instalado8"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card8Img"></button>
+            <button class="card" id="searchPs1Card9"><div class="ps1Instalado" id="ps1Instalado9"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card9Img"></button>
+            <button class="card" id="searchPs1Card10"><div class="ps1Instalado" id="ps1Instalado10"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card10Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card11"><div class="ps1Instalado" id="ps1Instalado11"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card11Img"></button>
+            <button class="card" id="searchPs1Card12"><div class="ps1Instalado" id="ps1Instalado12"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card12Img"></button>
+            <button class="card" id="searchPs1Card13"><div class="ps1Instalado" id="ps1Instalado13"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card13Img"></button>
+            <button class="card" id="searchPs1Card14"><div class="ps1Instalado" id="ps1Instalado14"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card14Img"></button>
+            <button class="card" id="searchPs1Card15"><div class="ps1Instalado" id="ps1Instalado15"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card15Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card16"><div class="ps1Instalado" id="ps1Instalado16"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card16Img"></button>
+            <button class="card" id="searchPs1Card17"><div class="ps1Instalado" id="ps1Instalado17"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card17Img"></button>
+            <button class="card" id="searchPs1Card18"><div class="ps1Instalado" id="ps1Instalado18"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card18Img"></button>
+            <button class="card" id="searchPs1Card19"><div class="ps1Instalado" id="ps1Instalado19"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card19Img"></button>
+            <button class="card" id="searchPs1Card20"><div class="ps1Instalado" id="ps1Instalado20"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card20Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card21"><div class="ps1Instalado" id="ps1Instalado21"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card21Img"></button>
+            <button class="card" id="searchPs1Card22"><div class="ps1Instalado" id="ps1Instalado22"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card22Img"></button>
+            <button class="card" id="searchPs1Card23"><div class="ps1Instalado" id="ps1Instalado23"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card23Img"></button>
+            <button class="card" id="searchPs1Card24"><div class="ps1Instalado" id="ps1Instalado24"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card24Img"></button>
+            <button class="card" id="searchPs1Card25"><div class="ps1Instalado" id="ps1Instalado25"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card25Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card26"><div class="ps1Instalado" id="ps1Instalado26"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card26Img"></button>
+            <button class="card" id="searchPs1Card27"><div class="ps1Instalado" id="ps1Instalado27"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card27Img"></button>
+            <button class="card" id="searchPs1Card28"><div class="ps1Instalado" id="ps1Instalado28"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card28Img"></button>
+            <button class="card" id="searchPs1Card29"><div class="ps1Instalado" id="ps1Instalado29"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card29Img"></button>
+            <button class="card" id="searchPs1Card30"><div class="ps1Instalado" id="ps1Instalado30"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card30Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card31"><div class="ps1Instalado" id="ps1Instalado31"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card31Img"></button>
+            <button class="card" id="searchPs1Card32"><div class="ps1Instalado" id="ps1Instalado32"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card32Img"></button>
+            <button class="card" id="searchPs1Card33"><div class="ps1Instalado" id="ps1Instalado33"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card33Img"></button>
+            <button class="card" id="searchPs1Card34"><div class="ps1Instalado" id="ps1Instalado34"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card34Img"></button>
+            <button class="card" id="searchPs1Card35"><div class="ps1Instalado" id="ps1Instalado35"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card35Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card36"><div class="ps1Instalado" id="ps1Instalado36"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card36Img"></button>
+            <button class="card" id="searchPs1Card37"><div class="ps1Instalado" id="ps1Instalado37"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card37Img"></button>
+            <button class="card" id="searchPs1Card38"><div class="ps1Instalado" id="ps1Instalado38"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card38Img"></button>
+            <button class="card" id="searchPs1Card39"><div class="ps1Instalado" id="ps1Instalado39"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card39Img"></button>
+            <button class="card" id="searchPs1Card40"><div class="ps1Instalado" id="ps1Instalado40"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card40Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card41"><div class="ps1Instalado" id="ps1Instalado41"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card41Img"></button>
+            <button class="card" id="searchPs1Card42"><div class="ps1Instalado" id="ps1Instalado42"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card42Img"></button>
+            <button class="card" id="searchPs1Card43"><div class="ps1Instalado" id="ps1Instalado43"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card43Img"></button>
+            <button class="card" id="searchPs1Card44"><div class="ps1Instalado" id="ps1Instalado44"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card44Img"></button>
+            <button class="card" id="searchPs1Card45"><div class="ps1Instalado" id="ps1Instalado45"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card45Img"></button>
+        </div>
+
+        <div class="searchPs1HolderCardHolder">
+            <button class="card" id="searchPs1Card46"><div class="ps1Instalado" id="ps1Instalado46"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card46Img"></button>
+            <button class="card" id="searchPs1Card47"><div class="ps1Instalado" id="ps1Instalado47"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card47Img"></button>
+            <button class="card" id="searchPs1Card48"><div class="ps1Instalado" id="ps1Instalado48"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card48Img"></button>
+            <button class="card" id="searchPs1Card49"><div class="ps1Instalado" id="ps1Instalado49"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card49Img"></button>
+            <button class="card" id="searchPs1Card50"><div class="ps1Instalado" id="ps1Instalado50"><p>INSTALADO</p></div><img src="" alt="" id="searchPs1Card50Img"></button>
+        </div>
+    <div id="ghost1"></div>
+        </div>
+    </div>
+    <div id="searchPs2Holder" class="playGameAnimation">
+        <button id="searchPs2HolderBack"><img src="icons/undo-alt.png" alt=""></button>
+        <h1 id="searchPs2HolderTitle">Jogos de Playstation 2 Disponíveis</h1>
+        <div id="searchPs2HolderBox">
+            <div id="searchPs2HolderBoxText">
+                <p>TODOS <span>(50)</span></p>
+                <div id="searchPs2HolderBar"></div>
+            </div>
+            <div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card11"><div class="instalado" id="instalado1"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card1Capa"></button>
+    <button class="card cardps2" id="card12"><div class="instalado" id="instalado2"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card2Capa"></button>
+<button class="card cardps2" id="card13"><div class="instalado" id="instalado3"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card3Capa"></button>
+    <button class="card cardps2" id="card14"><div class="instalado" id="instalado4"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card4Capa"></button>
+    <button class="card cardps2" id="card15"><div class="instalado" id="instalado5"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card5Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card16"><div class="instalado" id="instalado6"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card6Capa"></button>
+    <button class="card cardps2" id="card17"><div class="instalado" id="instalado7"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card7Capa"></button>
+    <button class="card cardps2" id="card18"><div class="instalado" id="instalado8"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card8Capa"></button>
+    <button class="card cardps2" id="card19"><div class="instalado" id="instalado9"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card9Capa"></button>
+    <button class="card cardps2" id="card20"><div class="instalado" id="instalado10"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card10Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card21"><div class="instalado" id="instalado11"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card11Capa"></button>
+    <button class="card cardps2" id="card22"><div class="instalado" id="instalado12"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card12Capa"></button>
+    <button class="card cardps2" id="card23"><div class="instalado" id="instalado13"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card13Capa"></button>
+    <button class="card cardps2" id="card24"><div class="instalado" id="instalado14"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card14Capa"></button>
+    <button class="card cardps2" id="card25"><div class="instalado" id="instalado15"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card15Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card26"><div class="instalado" id="instalado16"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card16Capa"></button>
+    <button class="card cardps2" id="card27"><div class="instalado" id="instalado17"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card17Capa"></button>
+    <button class="card cardps2" id="card28"><div class="instalado" id="instalado18"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card18Capa"></button>
+    <button class="card cardps2" id="card29"><div class="instalado" id="instalado19"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card19Capa"></button>
+    <button class="card cardps2" id="card30"><div class="instalado" id="instalado20"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card20Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card31"><div class="instalado" id="instalado21"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card21Capa"></button>
+    <button class="card cardps2" id="card32"><div class="instalado" id="instalado22"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card22Capa"></button>
+    <button class="card cardps2" id="card33"><div class="instalado" id="instalado23"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card23Capa"></button>
+    <button class="card cardps2" id="card34"><div class="instalado" id="instalado24"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card24Capa"></button>
+    <button class="card cardps2" id="card35"><div class="instalado" id="instalado25"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card25Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card36"><div class="instalado" id="instalado26"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card26Capa"></button>
+    <button class="card cardps2" id="card37"><div class="instalado" id="instalado27"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card27Capa"></button>
+    <button class="card cardps2" id="card38"><div class="instalado" id="instalado28"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card28Capa"></button>
+    <button class="card cardps2" id="card39"><div class="instalado" id="instalado29"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card29Capa"></button>
+    <button class="card cardps2" id="card40"><div class="instalado" id="instalado30"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card30Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card41"><div class="instalado" id="instalado31"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card31Capa"></button>
+    <button class="card cardps2" id="card42"><div class="instalado" id="instalado32"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card32Capa"></button>
+    <button class="card cardps2" id="card43"><div class="instalado" id="instalado33"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card33Capa"></button>
+    <button class="card cardps2" id="card44"><div class="instalado" id="instalado34"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card34Capa"></button>
+    <button class="card cardps2" id="card45"><div class="instalado" id="instalado35"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card35Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card46"><div class="instalado" id="instalado36"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card36Capa"></button>
+    <button class="card cardps2" id="card47"><div class="instalado" id="instalado37"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card37Capa"></button>
+    <button class="card cardps2" id="card48"><div class="instalado" id="instalado38"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card38Capa"></button>
+    <button class="card cardps2" id="card49"><div class="instalado" id="instalado39"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card39Capa"></button>
+    <button class="card cardps2" id="card50"><div class="instalado" id="instalado40"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card40Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card51"><div class="instalado" id="instalado41"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card41Capa"></button>
+    <button class="card cardps2" id="card52"><div class="instalado" id="instalado42"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card42Capa"></button>
+    <button class="card cardps2" id="card53"><div class="instalado" id="instalado43"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card43Capa"></button>
+    <button class="card cardps2" id="card54"><div class="instalado" id="instalado44"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card44Capa"></button>
+    <button class="card cardps2" id="card55"><div class="instalado" id="instalado45"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card45Capa"></button>
+</div>
+
+<div class="searchPs2HolderCardHolder">
+    <button class="card cardps2" id="card56"><div class="instalado" id="instalado46"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card46Capa"></button>
+    <button class="card cardps2" id="card57"><div class="instalado" id="instalado47"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card47Capa"></button>
+    <button class="card cardps2" id="card58"><div class="instalado" id="instalado48"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card48Capa"></button>
+    <button class="card cardps2" id="card59"><div class="instalado" id="instalado49"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card49Capa"></button>
+    <button class="card cardps2" id="card60"><div class="instalado" id="instalado50"><p>INSTALADO</p></div><img src="" alt="" id="searchPs2Card50Capa"></button>
+</div>
+<div id="ghost2"></div>
+</div>
+    </div>
+
+    <div id="searchPs3Holder" class="playGameAnimation">
+        <button id="searchPs3HolderBack"><img src="icons/undo-alt.png" alt=""></button>
+        <h1 id="searchPs3HolderTitle">Jogos de Playstation 3 Disponíveis</h1>
+        <div id="searchPs3HolderBox">
+            <div id="searchPs3HolderBoxText">
+                <p>TODOS <span>(50)</span></p>
+                <div id="searchPs3HolderBar"></div>
+            </div>
+            <div id="searchPs3HolderOrder">
+                ORDENAR:
+                <button id="searchPs3HolderOrderButtonSize" class="searchHolderOrderButtonSize">Tamanho</button>
+                <button id="searchPs3HolderOrderButtonRate" class="searchHolderOrderButtonRate">Nota</button>
+            </div>
+            <div class="searchPs3HolderCardHolder">
+    <button class="card cardps3" id="searchPs3Card1"><img src="" alt="" id="searchPs3Card1Capa"></button>
+    <button class="card cardps3" id="searchPs3Card2"><img src="" alt="" id="searchPs3Card2Capa"></button>
+    <button class="card cardps3" id="searchPs3Card3"><img src="" alt="" id="searchPs3Card3Capa"></button>
+    <button class="card cardps3" id="searchPs3Card4"><img src="" alt="" id="searchPs3Card4Capa"></button>
+    <button class="card cardps3" id="searchPs3Card5"><img src="" alt="" id="searchPs3Card5Capa"></button>
+</div>
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card6"><img src="" alt="" id="searchPs3Card6Capa"></button>
+        <button class="card cardps3" id="searchPs3Card7"><img src="" alt="" id="searchPs3Card7Capa"></button>
+        <button class="card cardps3" id="searchPs3Card8"><img src="" alt="" id="searchPs3Card8Capa"></button>
+        <button class="card cardps3" id="searchPs3Card9"><img src="" alt="" id="searchPs3Card9Capa"></button>
+        <button class="card cardps3" id="searchPs3Card10"><img src="" alt="" id="searchPs3Card10Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card11"><img src="" alt="" id="searchPs3Card11Capa"></button>
+        <button class="card cardps3" id="searchPs3Card12"><img src="" alt="" id="searchPs3Card12Capa"></button>
+        <button class="card cardps3" id="searchPs3Card13"><img src="" alt="" id="searchPs3Card13Capa"></button>
+        <button class="card cardps3" id="searchPs3Card14"><img src="" alt="" id="searchPs3Card14Capa"></button>
+        <button class="card cardps3" id="searchPs3Card15"><img src="" alt="" id="searchPs3Card15Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card16"><img src="" alt="" id="searchPs3Card16Capa"></button>
+        <button class="card cardps3" id="searchPs3Card17"><img src="" alt="" id="searchPs3Card17Capa"></button>
+        <button class="card cardps3" id="searchPs3Card18"><img src="" alt="" id="searchPs3Card18Capa"></button>
+        <button class="card cardps3" id="searchPs3Card19"><img src="" alt="" id="searchPs3Card19Capa"></button>
+        <button class="card cardps3" id="searchPs3Card20"><img src="" alt="" id="searchPs3Card20Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card21"><img src="" alt="" id="searchPs3Card21Capa"></button>
+        <button class="card cardps3" id="searchPs3Card22"><img src="" alt="" id="searchPs3Card22Capa"></button>
+        <button class="card cardps3" id="searchPs3Card23"><img src="" alt="" id="searchPs3Card23Capa"></button>
+        <button class="card cardps3" id="searchPs3Card24"><img src="" alt="" id="searchPs3Card24Capa"></button>
+        <button class="card cardps3" id="searchPs3Card25"><img src="" alt="" id="searchPs3Card25Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card26"><img src="" alt="" id="searchPs3Card26Capa"></button>
+        <button class="card cardps3" id="searchPs3Card27"><img src="" alt="" id="searchPs3Card27Capa"></button>
+        <button class="card cardps3" id="searchPs3Card28"><img src="" alt="" id="searchPs3Card28Capa"></button>
+        <button class="card cardps3" id="searchPs3Card29"><img src="" alt="" id="searchPs3Card29Capa"></button>
+        <button class="card cardps3" id="searchPs3Card30"><img src="" alt="" id="searchPs3Card30Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card31"><img src="" alt="" id="searchPs3Card31Capa"></button>
+        <button class="card cardps3" id="searchPs3Card32"><img src="" alt="" id="searchPs3Card32Capa"></button>
+        <button class="card cardps3" id="searchPs3Card33"><img src="" alt="" id="searchPs3Card33Capa"></button>
+        <button class="card cardps3" id="searchPs3Card34"><img src="" alt="" id="searchPs3Card34Capa"></button>
+        <button class="card cardps3" id="searchPs3Card35"><img src="" alt="" id="searchPs3Card35Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card36"><img src="" alt="" id="searchPs3Card36Capa"></button>
+        <button class="card cardps3" id="searchPs3Card37"><img src="" alt="" id="searchPs3Card37Capa"></button>
+        <button class="card cardps3" id="searchPs3Card38"><img src="" alt="" id="searchPs3Card38Capa"></button>
+        <button class="card cardps3" id="searchPs3Card39"><img src="" alt="" id="searchPs3Card39Capa"></button>
+        <button class="card cardps3" id="searchPs3Card40"><img src="" alt="" id="searchPs3Card40Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card41"><img src="" alt="" id="searchPs3Card41Capa"></button>
+        <button class="card cardps3" id="searchPs3Card42"><img src="" alt="" id="searchPs3Card42Capa"></button>
+        <button class="card cardps3" id="searchPs3Card43"><img src="" alt="" id="searchPs3Card43Capa"></button>
+        <button class="card cardps3" id="searchPs3Card44"><img src="" alt="" id="searchPs3Card44Capa"></button>
+        <button class="card cardps3" id="searchPs3Card45"><img src="" alt="" id="searchPs3Card45Capa"></button>
+    </div>
+
+    <div class="searchPs3HolderCardHolder">
+        <button class="card cardps3" id="searchPs3Card46"><img src="" alt="" id="searchPs3Card46Capa"></button>
+        <button class="card cardps3" id="searchPs3Card47"><img src="" alt="" id="searchPs3Card47Capa"></button>
+        <button class="card cardps3" id="searchPs3Card48"><img src="" alt="" id="searchPs3Card48Capa"></button>
+        <button class="card cardps3" id="searchPs3Card49"><img src="" alt="" id="searchPs3Card49Capa"></button>
+        <button class="card cardps3" id="searchPs3Card50"><img src="" alt="" id="searchPs3Card50Capa"></button>
+    </div>
+</div>
+    </div>
+
+
+    <div id="searchXbox360Holder" class="playGameAnimation">
+        <button id="searchXbox360HolderBack"><img src="icons/undo-alt.png" alt=""></button>
+        <h1 id="searchXbox360HolderTitle">Jogos de Xbox 360 Disponíveis</h1>
+        <div id="searchXbox360HolderBox">
+            <div id="searchXbox360HolderBoxText">
+                <p>TODOS <span>(50)</span></p>
+                <div id="searchXbox360HolderBar"></div>
+            </div>
+            <div id="searchXbox360HolderOrder">
+                ORDENAR:
+                <button id="searchXbox360HolderOrderButtonSize" class="searchHolderOrderButtonSize">Tamanho</button>
+                <button id="searchXbox360HolderOrderButtonRate" class="searchHolderOrderButtonRate">Nota</button>
+            </div>
+<div class="searchXbox360HolderCardHolder">
+    <button class="card cardxbox360" id="searchXboxCard1"><img src="" alt="" id="searchXboxCard1Capa"></button>
+    <button class="card cardxbox360" id="searchXboxCard2"><img src="" alt="" id="searchXboxCard2Capa"></button>
+    <button class="card cardxbox360" id="searchXboxCard3"><img src="" alt="" id="searchXboxCard3Capa"></button>
+    <button class="card cardxbox360" id="searchXboxCard4"><img src="" alt="" id="searchXboxCard4Capa"></button>
+    <button class="card cardxbox360" id="searchXboxCard5"><img src="" alt="" id="searchXboxCard5Capa"></button>
+</div>
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard6"><img src="" alt="" id="searchXboxCard6Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard7"><img src="" alt="" id="searchXboxCard7Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard8"><img src="" alt="" id="searchXboxCard8Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard9"><img src="" alt="" id="searchXboxCard9Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard10"><img src="" alt="" id="searchXboxCard10Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard11"><img src="" alt="" id="searchXboxCard11Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard12"><img src="" alt="" id="searchXboxCard12Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard13"><img src="" alt="" id="searchXboxCard13Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard14"><img src="" alt="" id="searchXboxCard14Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard15"><img src="" alt="" id="searchXboxCard15Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard16"><img src="" alt="" id="searchXboxCard16Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard17"><img src="" alt="" id="searchXboxCard17Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard18"><img src="" alt="" id="searchXboxCard18Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard19"><img src="" alt="" id="searchXboxCard19Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard20"><img src="" alt="" id="searchXboxCard20Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard21"><img src="" alt="" id="searchXboxCard21Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard22"><img src="" alt="" id="searchXboxCard22Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard23"><img src="" alt="" id="searchXboxCard23Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard24"><img src="" alt="" id="searchXboxCard24Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard25"><img src="" alt="" id="searchXboxCard25Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard26"><img src="" alt="" id="searchXboxCard26Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard27"><img src="" alt="" id="searchXboxCard27Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard28"><img src="" alt="" id="searchXboxCard28Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard29"><img src="" alt="" id="searchXboxCard29Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard30"><img src="" alt="" id="searchXboxCard30Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard31"><img src="" alt="" id="searchXboxCard31Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard32"><img src="" alt="" id="searchXboxCard32Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard33"><img src="" alt="" id="searchXboxCard33Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard34"><img src="" alt="" id="searchXboxCard34Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard35"><img src="" alt="" id="searchXboxCard35Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard36"><img src="" alt="" id="searchXboxCard36Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard37"><img src="" alt="" id="searchXboxCard37Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard38"><img src="" alt="" id="searchXboxCard38Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard39"><img src="" alt="" id="searchXboxCard39Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard40"><img src="" alt="" id="searchXboxCard40Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard41"><img src="" alt="" id="searchXboxCard41Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard42"><img src="" alt="" id="searchXboxCard42Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard43"><img src="" alt="" id="searchXboxCard43Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard44"><img src="" alt="" id="searchXboxCard44Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard45"><img src="" alt="" id="searchXboxCard45Capa"></button>
+    </div>
+
+    <div class="searchXbox360HolderCardHolder">
+        <button class="card cardxbox360" id="searchXboxCard46"><img src="" alt="" id="searchXboxCard46Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard47"><img src="" alt="" id="searchXboxCard47Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard48"><img src="" alt="" id="searchXboxCard48Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard49"><img src="" alt="" id="searchXboxCard49Capa"></button>
+        <button class="card cardxbox360" id="searchXboxCard50"><img src="" alt="" id="searchXboxCard50Capa"></button>
+    </div>
+</div>
+    </div>
+
+
+    <div id="config">
+        <div id="configLeft">
+            <div id="configLeftBar">
+                <img src="background_songs_covers/240305-mj-billiejean-single.jpg" alt="" id="barSoundImg">
+                <p>Volume:</p>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.1"></div>
+            <div id="configBack">
+                <button id="configBackButton"><img src="icons/undo-alt.png" alt=""></button>
+                <p>Voltar</p>
+            </div>
+            <button id="configSound"><p>Som</p></button>
+        </div>
+        <div id="configSoundBox">
+            <h1>Músicas de fundo do Nexus</h1>
+            <div id="configSoundBoxHolder">
+                <button class="configSoundBoxCard" id="configCard1"><img src="background_songs_covers/gta-san-andreas.png" alt="" id="configCard1Img"></button>
+                <button class="configSoundBoxCard" id="configCard2"><img src="background_songs_covers//240305-mj-billiejean-single.jpg" alt="" id="configCard2Img"></button>
+                <button class="configSoundBoxCard" id="configCard3"><img src="background_songs_covers//livin.jpg" alt="" id="configCard3Img"></button>
+                <button class="configSoundBoxCard" id="configCard4"><img src="background_songs_covers/cant touch.jpg" alt="" id="configCard4Img"></button>
+                <button class="configSoundBoxCard" id="configCard5"><img src="background_songs_covers/sweet.jpg" alt="" id="configCard5Img"></button>
+                <button class="configSoundBoxCard" id="configCard6"><img src="background_songs_covers/never.jpg" alt="" id="configCard6Img"></button>
+                <button class="configSoundBoxCard" id="configCard7"><img src="background_songs_covers/milli vanili.jpg" alt="" id="configCard7Img"></button>
+                <button class="configSoundBoxCard" id="configCard8"><img src="background_songs_covers/another_one.jpg" alt="" id="configCard8Img"></button>
+                <button class="configSoundBoxCard" id="configCard9"><img src="background_songs_covers/pump.jpg" alt="" id="configCard9Img"></button>
+                <button class="configSoundBoxCard" id="configCard10"><img src="background_songs_covers/Beat_It.jpg" alt="" id="configCard10Img"></button>
+                <button class="configSoundBoxCard" id="configCard11"><img src="icons/cross.png" alt=""></button>
+                <button class="configSoundBoxCard" id="configCard12" inert><img src="icons/debut-light.png" alt=""></button>
+                <button class="configSoundBoxCard" id="configCard13" inert><img src="icons/debut-light.png" alt=""></button>
+                <button class="configSoundBoxCard" id="configCard14" inert><img src="icons/debut-light.png" alt=""></button>
+                <button class="configSoundBoxCard" id="configCard15" inert><img src="icons/debut-light.png" alt=""></button>
+            </div>
+        </div>
+        <div id="configGraficosBox"></div>
+        <div id="configPlanosBox"></div>
+    </div>
+
+    <div id="playGame" class="playGameAnimation">
+        <button id="playGameBack"><img src="icons/undo-alt.png" alt=""></button>
+        <div id="playGameHolder">
+            <div id="playGameHolderTitle">
+                <img src="" alt="" id="playGameHolderTitleImg">
+            </div>
+
+            <div id="playGameHolderRate">
+                <img src="icons/star.png" alt="" id="redStar">
+                <p id="rate">6.7/<span class="rateGray" id="rateGray1">10 | </span> <span id="playGameHolderRateYear">2007</span></p>
+                <img src="icons/imdb.png" alt="" id="imdbIcon">
+                <p class="rateGray" id="rateGray2"></p>
+            </div>
+            <div id="downloadBox">
+            <div id="download-container">
+                <div id="progress-bar"></div>
+            </div>
+            <button id="btnCancelar"><img src="icons/cross.png" alt=""></button>
+            </div>
+            <p id="playGameHolderDesc"></p>
+
+            <button id="playGameHolderButton" class="TR">INSTALAR</button>
+            <div id="ps1Testezada1" class="ps1Testezada">
+                <button id="playGameHolderPs1Button1" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button1Img"><p>INSTALAR</p></button>
+                <button id="ps1Desinstalar1" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada2" class="ps1Testezada">
+                <button id="playGameHolderPs1Button2" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button2Img"><p>INSTALAR</p></button>
+                <button id="ps1Desinstalar2" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada3" class="ps1Testezada">
+                <button id="playGameHolderPs1Button3" class="TR"><img src="" alt="" id="playGameHolderPs1Button3Img"><p>INSTALAR</p></button>
+                <button id="ps1Desinstalar3" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada4" class="ps1Testezada">
+            <button id="playGameHolderPs1Button4" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button4Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar4" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada5" class="ps1Testezada">
+            <button id="playGameHolderPs1Button5" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button5Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar5" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada6" class="ps1Testezada">
+            <button id="playGameHolderPs1Button6" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button6Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar6" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada7" class="ps1Testezada">
+            <button id="playGameHolderPs1Button7" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button7Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar7" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada8" class="ps1Testezada">
+            <button id="playGameHolderPs1Button8" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button8Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar8" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada9" class="ps1Testezada">
+            <button id="playGameHolderPs1Button9" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button9Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar9" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada10" class="ps1Testezada">
+            <button id="playGameHolderPs1Button10" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button10Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar10" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+
+            <div id="ps1Testezada11" class="ps1Testezada">
+            <button id="playGameHolderPs1Button11" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button11Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar11" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada12" class="ps1Testezada">
+            <button id="playGameHolderPs1Button12" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button12Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar12" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada13" class="ps1Testezada">
+            <button id="playGameHolderPs1Button13" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button13Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar13" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada14" class="ps1Testezada">
+            <button id="playGameHolderPs1Button14" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button14Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar14" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada15" class="ps1Testezada">
+            <button id="playGameHolderPs1Button15" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button15Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar15" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada16" class="ps1Testezada">
+            <button id="playGameHolderPs1Button16" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button16Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar16" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada17" class="ps1Testezada">
+            <button id="playGameHolderPs1Button17" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button17Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar17" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada18" class="ps1Testezada">
+            <button id="playGameHolderPs1Button18" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button18Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar18" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada19" class="ps1Testezada">
+            <button id="playGameHolderPs1Button19" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button19Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar19" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada20" class="ps1Testezada">
+            <button id="playGameHolderPs1Button20" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button20Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar20" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+
+            <div id="ps1Testezada21" class="ps1Testezada">
+            <button id="playGameHolderPs1Button21" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button21Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar21" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada22" class="ps1Testezada">
+            <button id="playGameHolderPs1Button22" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button22Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar22" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada23" class="ps1Testezada">
+            <button id="playGameHolderPs1Button23" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button23Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar23" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada24" class="ps1Testezada">
+            <button id="playGameHolderPs1Button24" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button24Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar24" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada25" class="ps1Testezada">
+            <button id="playGameHolderPs1Button25" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button25Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar25" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada26" class="ps1Testezada">
+            <button id="playGameHolderPs1Button26" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button26Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar26" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada27" class="ps1Testezada">
+            <button id="playGameHolderPs1Button27" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button27Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar27" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada28" class="ps1Testezada">
+            <button id="playGameHolderPs1Button28" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button28Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar28" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada29" class="ps1Testezada">
+            <button id="playGameHolderPs1Button29" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button29Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar29" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada30" class="ps1Testezada">
+            <button id="playGameHolderPs1Button30" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button30Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar30" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+
+            <div id="ps1Testezada31" class="ps1Testezada">
+            <button id="playGameHolderPs1Button31" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button31Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar31" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada32" class="ps1Testezada">
+            <button id="playGameHolderPs1Button32" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button32Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar32" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada33" class="ps1Testezada">
+            <button id="playGameHolderPs1Button33" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button33Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar33" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada34" class="ps1Testezada">
+            <button id="playGameHolderPs1Button34" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button34Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar34" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada35" class="ps1Testezada">
+            <button id="playGameHolderPs1Button35" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button35Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar35" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada36" class="ps1Testezada">
+            <button id="playGameHolderPs1Button36" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button36Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar36" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada37" class="ps1Testezada">
+            <button id="playGameHolderPs1Button37" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button37Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar37" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada38" class="ps1Testezada">
+            <button id="playGameHolderPs1Button38" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button38Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar38" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada39" class="ps1Testezada">
+            <button id="playGameHolderPs1Button39" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button39Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar39" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada40" class="ps1Testezada">
+            <button id="playGameHolderPs1Button40" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button40Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar40" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+
+            <div id="ps1Testezada41" class="ps1Testezada">
+            <button id="playGameHolderPs1Button41" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button41Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar41" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada42" class="ps1Testezada">
+            <button id="playGameHolderPs1Button42" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button42Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar42" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada43" class="ps1Testezada">
+            <button id="playGameHolderPs1Button43" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button43Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar43" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada44" class="ps1Testezada">
+            <button id="playGameHolderPs1Button44" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button44Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar44" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada45" class="ps1Testezada">
+            <button id="playGameHolderPs1Button45" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button45Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar45" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada46" class="ps1Testezada">
+            <button id="playGameHolderPs1Button46" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button46Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar46" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada47" class="ps1Testezada">
+            <button id="playGameHolderPs1Button47" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button47Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar47" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada48" class="ps1Testezada">
+            <button id="playGameHolderPs1Button48" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button48Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar48" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada49" class="ps1Testezada">
+            <button id="playGameHolderPs1Button49" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button49Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar49" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="ps1Testezada50" class="ps1Testezada">
+            <button id="playGameHolderPs1Button50" class="playGameHolderPs1Button"><img src="" alt="" id="playGameHolderPs1Button50Img"><p>INSTALAR</p></button>
+            <button id="ps1Desinstalar50" class="ps1Desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada11" class="testezada">
+                <button id="playGameHolderButton11" class="TR"><img src="" alt="" id="playGameHolderButtonImg11"><p>INSTALAR</p></button>
+                <button id="desinstalar11" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada12" class="testezada">
+                <button id="playGameHolderButton12" class="TR"><img src="" alt="" id="playGameHolderButtonImg12"><p>INSTALAR</p></button>
+                <button id="desinstalar12" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada13" class="testezada">
+                <button id="playGameHolderButton13" class="TR"><img src="" alt="" id="playGameHolderButtonImg13"><p>INSTALAR</p></button>
+                <button id="desinstalar13" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada14" class="testezada">
+                <button id="playGameHolderButton14" class="TR"><img src="" alt="" id="playGameHolderButtonImg14"><p>INSTALAR</p></button>
+                <button id="desinstalar14" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div> 
+            <div id="testezada15" class="testezada">
+                <button id="playGameHolderButton15" class="TR"><img src="" alt="" id="playGameHolderButtonImg15"><p>INSTALAR</p></button>
+                <button id="desinstalar15" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada16" class="testezada">
+                <button id="playGameHolderButton16" class="TR"><img src="" alt="" id="playGameHolderButtonImg16"><p>INSTALAR</p></button>
+                <button id="desinstalar16" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada17" class="testezada">
+                <button id="playGameHolderButton17" class="TR"><img src="" alt="" id="playGameHolderButtonImg17"><p>INSTALAR</p></button>
+                <button id="desinstalar17" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada18" class="testezada">
+                <button id="playGameHolderButton18" class="TR"><img src="" alt="" id="playGameHolderButtonImg18"><p>INSTALAR</p></button>
+                <button id="desinstalar18" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada19" class="testezada">
+                <button id="playGameHolderButton19" class="TR"><img src="" alt="" id="playGameHolderButtonImg19"><p>INSTALAR</p></button>
+                <button id="desinstalar19" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada20" class="testezada">
+                <button id="playGameHolderButton20" class="TR"><img src="" alt="" id="playGameHolderButtonImg20"><p>INSTALAR</p></button>
+                <button id="desinstalar20" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada21" class="testezada">
+                    <button id="playGameHolderButton21" class="TR"><img src="" alt="" id="playGameHolderButtonImg21"><p>INSTALAR</p></button>
+                    <button id="desinstalar21" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada22" class="testezada">
+                <button id="playGameHolderButton22" class="TR"><img src="" alt="" id="playGameHolderButtonImg22"><p>INSTALAR</p></button>
+                <button id="desinstalar22" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada23" class="testezada">
+                <button id="playGameHolderButton23" class="TR"><img src="" alt="" id="playGameHolderButtonImg23"><p>INSTALAR</p></button>
+                <button id="desinstalar23" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada24" class="testezada">
+                <button id="playGameHolderButton24" class="TR"><img src="" alt="" id="playGameHolderButtonImg24"><p>INSTALAR</p></button>
+                <button id="desinstalar24" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada25" class="testezada">
+                <button id="playGameHolderButton25" class="TR"><img src="" alt="" id="playGameHolderButtonImg25"><p>INSTALAR</p></button>
+                <button id="desinstalar25" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada26" class="testezada">
+                <button id="playGameHolderButton26" class="TR"><img src="" alt="" id="playGameHolderButtonImg26"><p>INSTALAR</p></button>
+                <button id="desinstalar26" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada27" class="testezada">
+                <button id="playGameHolderButton27" class="TR"><img src="" alt="" id="playGameHolderButtonImg27"><p>INSTALAR</p></button>
+                <button id="desinstalar27" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada28" class="testezada">
+                <button id="playGameHolderButton28" class="TR"><img src="" alt="" id="playGameHolderButtonImg28"><p>INSTALAR</p></button>
+                <button id="desinstalar28" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada29" class="testezada">
+                <button id="playGameHolderButton29" class="TR"><img src="" alt="" id="playGameHolderButtonImg29"><p>INSTALAR</p></button>
+                <button id="desinstalar29" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada30" class="testezada">
+                <button id="playGameHolderButton30" class="TR"><img src="" alt="" id="playGameHolderButtonImg30"><p>INSTALAR</p></button>
+                <button id="desinstalar30" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada31" class="testezada">
+                <button id="playGameHolderButton31" class="TR"><img src="" alt="" id="playGameHolderButtonImg31"><p>INSTALAR</p></button>
+                <button id="desinstalar31" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada32" class="testezada">
+                <button id="playGameHolderButton32" class="TR"><img src="" alt="" id="playGameHolderButtonImg32"><p>INSTALAR</p></button>
+                <button id="desinstalar32" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada33" class="testezada">
+                <button id="playGameHolderButton33" class="TR"><img src="" alt="" id="playGameHolderButtonImg33"><p>INSTALAR</p></button>
+                <button id="desinstalar33" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada34" class="testezada">
+                <button id="playGameHolderButton34" class="TR"><img src="" alt="" id="playGameHolderButtonImg34"><p>INSTALAR</p></button>
+                <button id="desinstalar34" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada35" class="testezada">
+                <button id="playGameHolderButton35" class="TR"><img src="" alt="" id="playGameHolderButtonImg35"><p>INSTALAR</p></button>
+                <button id="desinstalar35" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada36" class="testezada">
+                <button id="playGameHolderButton36" class="TR"><img src="" alt="" id="playGameHolderButtonImg36"><p>INSTALAR</p></button>
+                <button id="desinstalar36" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada37" class="testezada">
+                <button id="playGameHolderButton37" class="TR"><img src="" alt="" id="playGameHolderButtonImg37"><p>INSTALAR</p></button>
+                <button id="desinstalar37" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada38" class="testezada">
+                <button id="playGameHolderButton38" class="TR"><img src="" alt="" id="playGameHolderButtonImg38"><p>INSTALAR</p></button>
+                <button id="desinstalar38" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada39" class="testezada">
+                <button id="playGameHolderButton39" class="TR"><img src="" alt="" id="playGameHolderButtonImg39"><p>INSTALAR</p></button>
+                <button id="desinstalar39" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada40" class="testezada">
+                <button id="playGameHolderButton40" class="TR"><img src="" alt="" id="playGameHolderButtonImg40"><p>INSTALAR</p></button>
+                <button id="desinstalar40" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada41" class="testezada">
+                <button id="playGameHolderButton41" class="TR"><img src="" alt="" id="playGameHolderButtonImg41"><p>INSTALAR</p></button>
+                <button id="desinstalar41" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada42" class="testezada">
+                <button id="playGameHolderButton42" class="TR"><img src="" alt="" id="playGameHolderButtonImg42"><p>INSTALAR</p></button>
+                <button id="desinstalar42" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada43" class="testezada">
+                <button id="playGameHolderButton43" class="TR"><img src="" alt="" id="playGameHolderButtonImg43"><p>INSTALAR</p></button>
+                <button id="desinstalar43" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada44" class="testezada">
+                <button id="playGameHolderButton44" class="TR"><img src="" alt="" id="playGameHolderButtonImg44"><p>INSTALAR</p></button>
+                <button id="desinstalar44" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada45" class="testezada">
+                <button id="playGameHolderButton45" class="TR"><img src="" alt="" id="playGameHolderButtonImg45"><p>INSTALAR</p></button>
+                <button id="desinstalar45" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada46" class="testezada">
+                <button id="playGameHolderButton46" class="TR"><img src="" alt="" id="playGameHolderButtonImg46"><p>INSTALAR</p></button>
+                <button id="desinstalar46" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada47" class="testezada">
+                <button id="playGameHolderButton47" class="TR"><img src="" alt="" id="playGameHolderButtonImg47"><p>INSTALAR</p></button>
+                <button id="desinstalar47" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada48" class="testezada">
+                <button id="playGameHolderButton48" class="TR"><img src="" alt="" id="playGameHolderButtonImg48"><p>INSTALAR</p></button>
+                <button id="desinstalar48" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada49" class="testezada">
+                <button id="playGameHolderButton49" class="TR"><img src="" alt="" id="playGameHolderButtonImg49"><p>INSTALAR</p></button>
+                <button id="desinstalar49" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada50" class="testezada">
+                <button id="playGameHolderButton50" class="TR"><img src="" alt="" id="playGameHolderButtonImg50"><p>INSTALAR</p></button>
+                <button id="desinstalar50" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada51" class="testezada">
+                <button id="playGameHolderButton51" class="TR"><img src="" alt="" id="playGameHolderButtonImg51"><p>INSTALAR</p></button>
+                <button id="desinstalar51" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada52" class="testezada">
+                <button id="playGameHolderButton52" class="TR"><img src="" alt="" id="playGameHolderButtonImg52"><p>INSTALAR</p></button>
+                <button id="desinstalar52" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada53" class="testezada">
+                <button id="playGameHolderButton53" class="TR"><img src="" alt="" id="playGameHolderButtonImg53"><p>INSTALAR</p></button>
+                <button id="desinstalar53" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada54" class="testezada">
+                <button id="playGameHolderButton54" class="TR"><img src="" alt="" id="playGameHolderButtonImg54"><p>INSTALAR</p></button>
+                <button id="desinstalar54" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada55" class="testezada">
+                <button id="playGameHolderButton55" class="TR"><img src="" alt="" id="playGameHolderButtonImg55"><p>INSTALAR</p></button>
+                <button id="desinstalar55" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada56" class="testezada">
+                <button id="playGameHolderButton56" class="TR"><img src="" alt="" id="playGameHolderButtonImg56"><p>INSTALAR</p></button>
+                <button id="desinstalar56" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada57" class="testezada">
+                <button id="playGameHolderButton57" class="TR"><img src="" alt="" id="playGameHolderButtonImg57"><p>INSTALAR</p></button>
+                <button id="desinstalar57" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada58" class="testezada">
+                <button id="playGameHolderButton58" class="TR"><img src="" alt="" id="playGameHolderButtonImg58"><p>INSTALAR</p></button>
+                <button id="desinstalar58" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada59" class="testezada">
+                <button id="playGameHolderButton59" class="TR"><img src="" alt="" id="playGameHolderButtonImg59"><p>INSTALAR</p></button>
+                <button id="desinstalar59" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+            <div id="testezada60" class="testezada">
+                <button id="playGameHolderButton60" class="TR"><img src="" alt="" id="playGameHolderButtonImg60"><p>INSTALAR</p></button>
+                <button id="desinstalar60" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+        </div>
+        <div id="playGameGradient"></div>
+        <div id="playGameBlack"></div>
+        <img src="linear_backgrounds/capa1.jpg" alt="" id="playGameBackground">
+    </div>
+    <section id="library" class="playGameAnimation">
+    <div id="warningLibrary">Você não tem nenhum jogo instalado...</div>
+            <div id="playGameLibrary" class="playGameAnimation">
+        <button id="playGameBackLibrary"><img src="icons/undo-alt.png" alt=""></button>
+        <div id="playGameHolder">
+            <div id="playGameHolderTitle">
+                <img src="" alt="" id="playGameHolderTitleImg">
+            </div>
+
+            <div id="playGameHolderRate">
+                <img src="icons/star.png" alt="" id="redStar">
+                <p id="rate">6.7/<span class="rateGray" id="rateGray1">10 | </span> <span id="playGameHolderRateYear">2008</span></p>
+                <img src="icons/imdb.png" alt="" id="imdbIcon">
+                <p class="rateGray" id="rateGray2"></p>
+            </div>
+            <div id="downloadBox">
+            <div id="download-container">
+                <div id="progress-bar"></div>
+            </div>
+            <button id="btnCancelar"><img src="icons/cross.png" alt=""></button>
+            </div>
+            <p id="playGameHolderDesc">gay123</p>
+
+            <button id="playGameHolderButton" class="TR">INSTALAR</button>
+            <div id="playGameLibraryTestezada" class="testezada">
+                <button id="playGameHolderButton10" class="TR"><img src="" alt="" id="playGameHolderButtonImg10"><p>INSTALAR</p></button>
+                <button id="desinstalar10" class="desinstalar"><img src="icons/3-points.png" alt=""></button>
+            </div>
+        </div>
+        <div id="playGameGradient"></div>
+        <div id="playGameBlack"></div>
+        <img src="" alt="" id="playGameBackground">
+    </div>
+        <button id="libraryBack"><img src="icons/undo-alt.png" alt=""></button>
+        <h1 id="libraryTitle">Jogo instalados</h1>
+        <section id="libraryPs1">
+            <h1 id="LibraryPs1Title" class="libraryTitles">Playstation 1</h1>
+            <div id="libraryPs1Holder" class="libraryPs1Holder">
+                <button id="libraryPs1Card1" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg1"></button>
+                <button id="libraryPs1Card2" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg2"></button>
+                <button id="libraryPs1Card3" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg3"></button>
+                <button id="libraryPs1Card4" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg4"></button>
+                <button id="libraryPs1Card5" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg5"></button>
+                <button id="libraryPs1Card6" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg6"></button>
+                <button id="libraryPs1Card7" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg7"></button>
+                <button id="libraryPs1Card8" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg8"></button>
+                <button id="libraryPs1Card9" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg9"></button>
+                <button id="libraryPs1Card10" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg10"></button>
+                <button id="libraryPs1Card11" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg11"></button>
+                <button id="libraryPs1Card12" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg12"></button>
+                <button id="libraryPs1Card13" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg13"></button>
+                <button id="libraryPs1Card14" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg14"></button>
+                <button id="libraryPs1Card15" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg15"></button>
+                <button id="libraryPs1Card16" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg16"></button>
+                <button id="libraryPs1Card17" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg17"></button>
+                <button id="libraryPs1Card18" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg18"></button>
+                <button id="libraryPs1Card19" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg19"></button>
+                <button id="libraryPs1Card20" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg20"></button>
+                <button id="libraryPs1Card21" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg21"></button>
+                <button id="libraryPs1Card22" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg22"></button>
+                <button id="libraryPs1Card23" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg23"></button>
+                <button id="libraryPs1Card24" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg24"></button>
+                <button id="libraryPs1Card25" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg25"></button>
+                <button id="libraryPs1Card26" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg26"></button>
+                <button id="libraryPs1Card27" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg27"></button>
+                <button id="libraryPs1Card28" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg28"></button>
+                <button id="libraryPs1Card29" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg29"></button>
+                <button id="libraryPs1Card30" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg30"></button>
+                <button id="libraryPs1Card31" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg31"></button>
+                <button id="libraryPs1Card32" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg32"></button>
+                <button id="libraryPs1Card33" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg33"></button>
+                <button id="libraryPs1Card34" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg34"></button>
+                <button id="libraryPs1Card35" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg35"></button>
+                <button id="libraryPs1Card36" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg36"></button>
+                <button id="libraryPs1Card37" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg37"></button>
+                <button id="libraryPs1Card38" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg38"></button>
+                <button id="libraryPs1Card39" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg39"></button>
+                <button id="libraryPs1Card40" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg40"></button>
+                <button id="libraryPs1Card41" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg41"></button>
+                <button id="libraryPs1Card42" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg42"></button>
+                <button id="libraryPs1Card43" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg43"></button>
+                <button id="libraryPs1Card44" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg44"></button>
+                <button id="libraryPs1Card45" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg45"></button>
+                <button id="libraryPs1Card46" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg46"></button>
+                <button id="libraryPs1Card47" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg47"></button>
+                <button id="libraryPs1Card48" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg48"></button>
+                <button id="libraryPs1Card49" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg49"></button>
+                <button id="libraryPs1Card50" class="libraryPs1Card"><img src="" alt="" id="libraryPs1CardImg50"></button>
+            </div>
+            
+        </section>
+        <section id="libraryPs2">
+            <h1 id="LibraryPs2Title" class="libraryTitles">Playstation 2</h1>
+        <div id="libraryPs2Holder1" class="libraryPs2Holder">
+            <button id="cardd11" class="card cardps2"><img src="" alt="" id="libraryPs2Capa11"></button>
+            <button id="cardd12" class="card cardps2"><img src="" alt="" id="libraryPs2Capa12"></button>
+            <button id="cardd13" class="card cardps2"><img src="" alt="" id="libraryPs2Capa13"></button>
+            <button id="cardd14" class="card cardps2"><img src="" alt="" id="libraryPs2Capa14"></button>
+            <button id="cardd15" class="card cardps2"><img src="" alt="" id="libraryPs2Capa15"></button>
+            <button id="cardd16" class="card cardps2"><img src="" alt="" id="libraryPs2Capa16"></button>
+            <button id="cardd17" class="card cardps2"><img src="" alt="" id="libraryPs2Capa17"></button>
+            <button id="cardd18" class="card cardps2"><img src="" alt="" id="libraryPs2Capa18"></button>
+            <button id="cardd19" class="card cardps2"><img src="" alt="" id="libraryPs2Capa19"></button>
+            <button id="cardd20" class="card cardps2"><img src="" alt="" id="libraryPs2Capa20"></button>
+            <button id="cardd21" class="card cardps2"><img src="" alt="" id="libraryPs2Capa21"></button>
+            <button id="cardd22" class="card cardps2"><img src="" alt="" id="libraryPs2Capa22"></button>
+            <button id="cardd23" class="card cardps2"><img src="" alt="" id="libraryPs2Capa23"></button>
+            <button id="cardd24" class="card cardps2"><img src="" alt="" id="libraryPs2Capa24"></button>
+            <button id="cardd25" class="card cardps2"><img src="" alt="" id="libraryPs2Capa25"></button>
+            <button id="cardd26" class="card cardps2"><img src="" alt="" id="libraryPs2Capa26"></button>
+            <button id="cardd27" class="card cardps2"><img src="" alt="" id="libraryPs2Capa27"></button>
+            <button id="cardd28" class="card cardps2"><img src="" alt="" id="libraryPs2Capa28"></button>
+            <button id="cardd29" class="card cardps2"><img src="" alt="" id="libraryPs2Capa29"></button>
+            <button id="cardd30" class="card cardps2"><img src="" alt="" id="libraryPs2Capa30"></button>
+            <button id="cardd31" class="card cardps2"><img src="" alt="" id="libraryPs2Capa31"></button>
+            <button id="cardd32" class="card cardps2"><img src="" alt="" id="libraryPs2Capa32"></button>
+            <button id="cardd33" class="card cardps2"><img src="" alt="" id="libraryPs2Capa33"></button>
+            <button id="cardd34" class="card cardps2"><img src="" alt="" id="libraryPs2Capa34"></button>
+            <button id="cardd35" class="card cardps2"><img src="" alt="" id="libraryPs2Capa35"></button>
+            <button id="cardd36" class="card cardps2"><img src="" alt="" id="libraryPs2Capa36"></button>
+            <button id="cardd37" class="card cardps2"><img src="" alt="" id="libraryPs2Capa37"></button>
+            <button id="cardd38" class="card cardps2"><img src="" alt="" id="libraryPs2Capa38"></button>
+            <button id="cardd39" class="card cardps2"><img src="" alt="" id="libraryPs2Capa39"></button>
+            <button id="cardd40" class="card cardps2"><img src="" alt="" id="libraryPs2Capa40"></button>
+            <button id="cardd41" class="card cardps2"><img src="" alt="" id="libraryPs2Capa41"></button>
+            <button id="cardd42" class="card cardps2"><img src="" alt="" id="libraryPs2Capa42"></button>
+            <button id="cardd43" class="card cardps2"><img src="" alt="" id="libraryPs2Capa43"></button>
+            <button id="cardd44" class="card cardps2"><img src="" alt="" id="libraryPs2Capa44"></button>
+            <button id="cardd45" class="card cardps2"><img src="" alt="" id="libraryPs2Capa45"></button>
+            <button id="cardd46" class="card cardps2"><img src="" alt="" id="libraryPs2Capa46"></button>
+            <button id="cardd47" class="card cardps2"><img src="" alt="" id="libraryPs2Capa47"></button>
+            <button id="cardd48" class="card cardps2"><img src="" alt="" id="libraryPs2Capa48"></button>
+            <button id="cardd49" class="card cardps2"><img src="" alt="" id="libraryPs2Capa49"></button>
+            <button id="cardd50" class="card cardps2"><img src="" alt="" id="libraryPs2Capa50"></button>
+            <button id="cardd51" class="card cardps2"><img src="" alt="" id="libraryPs2Capa51"></button>
+            <button id="cardd52" class="card cardps2"><img src="" alt="" id="libraryPs2Capa52"></button>
+            <button id="cardd53" class="card cardps2"><img src="" alt="" id="libraryPs2Capa53"></button>
+            <button id="cardd54" class="card cardps2"><img src="" alt="" id="libraryPs2Capa54"></button>
+            <button id="cardd55" class="card cardps2"><img src="" alt="" id="libraryPs2Capa55"></button>
+            <button id="cardd56" class="card cardps2"><img src="" alt="" id="libraryPs2Capa56"></button>
+            <button id="cardd57" class="card cardps2"><img src="" alt="" id="libraryPs2Capa57"></button>
+            <button id="cardd58" class="card cardps2"><img src="" alt="" id="libraryPs2Capa58"></button>
+            <button id="cardd59" class="card cardps2"><img src="" alt="" id="libraryPs2Capa59"></button>
+            <button id="cardd60" class="card cardps2"><img src="" alt="" id="libraryPs2Capa60"></button>
+        </div>
+        </section>
+        <section id="libraryPs3">
+            <h1 id="LibraryPs3Title" class="libraryTitles">Playstation 3</h1>
+            <div id="libraryPs3Holder" class="libraryPs3Holder">
+                <button id="libraryPs3Card1" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card2" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card3" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card4" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card5" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder2" class="libraryPs3Holder">
+                <button id="libraryPs3Card6" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card7" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card8" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card9" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card10" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder3" class="libraryPs3Holder">
+                <button id="libraryPs3Card11" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card12" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card13" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card14" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card15" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder4" class="libraryPs3Holder">
+                <button id="libraryPs3Card16" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card17" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card18" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card19" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card20" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder5" class="libraryPs3Holder">
+                <button id="libraryPs3Card21" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card22" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card23" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card24" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card25" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder6" class="libraryPs3Holder">
+                <button id="libraryPs3Card26" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card27" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card28" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card29" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card30" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder7" class="libraryPs3Holder">
+                <button id="libraryPs3Card31" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card32" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card33" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card34" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card35" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder8" class="libraryPs3Holder">
+                <button id="libraryPs3Card36" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card37" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card38" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card39" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card40" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder9" class="libraryPs3Holder">
+                <button id="libraryPs3Card41" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card42" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card43" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card44" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card45" class="libraryPs3Card"></button>
+            </div>
+
+            <div id="libraryPs3Holder10" class="libraryPs3Holder">
+                <button id="libraryPs3Card46" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card47" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card48" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card49" class="libraryPs3Card"></button>
+                <button id="libraryPs3Card50" class="libraryPs3Card"></button>
+            </div>
+        </section>
+        <section id="libraryXbox360">
+            <h1 id="LibraryXbox360Title" class="libraryTitles">Xbox360</h1>
+            <div id="libraryXbox360Holder" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card1" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card2" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card3" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card4" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card5" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder2" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card6" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card7" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card8" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card9" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card10" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder3" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card11" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card12" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card13" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card14" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card15" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder4" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card16" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card17" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card18" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card19" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card20" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder5" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card21" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card22" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card23" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card24" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card25" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder6" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card26" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card27" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card28" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card29" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card30" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder7" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card31" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card32" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card33" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card34" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card35" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder8" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card36" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card37" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card38" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card39" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card40" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder9" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card41" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card42" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card43" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card44" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card45" class="libraryXbox360Card"></button>
+            </div>
+
+            <div id="libraryXbox360Holder10" class="libraryXbox360Holder">
+                <button id="libraryXbox360Card46" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card47" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card48" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card49" class="libraryXbox360Card"></button>
+                <button id="libraryXbox360Card50" class="libraryXbox360Card"></button>
+            </div>
+        </section>
+        <div id="libraryGhost"></div>
+    </section>
+    <section id="info"></section>
+    <section id="search">
+        <button id="searchBack"><img src="icons/undo-alt.png" alt="" id="searcImg"></button>
+        <input type="text" id="searchBar" placeholder="Buscar jogos no catálogo...">
+        <p id="searchText">Plataformas</p>
+        <div id="searchPlataforms">
+            <button class="searchPlataformsButton" id="searchPlataformsButtonPs1"><img src="covers/covers_side_menu/ps1.png" alt="">Playstation1</button>
+            <button class="searchPlataformsButton" id="searchPlataformsButtonPs2"><img src="covers/covers_side_menu/ps2.png" alt="">Playstation2</button>
+            <button class="searchPlataformsButton" id="searchPlataformsButtonPs3" inert><img src="covers/covers_side_menu/ps3.jpg" alt="">Playstation3</button>
+            <button class="searchPlataformsButton" id="searchPlataformsButtonXbox360" inert><img src="covers/covers_side_menu/xbox360.png" alt="">Xbox360</button>
+        </div>
+        <div id="searchHolder">
+            <div class="card cardps2"><img src="" alt="" id="none"></div>
+        </div>
+    </section>
+    <div id="background">
+        <img src="linear_backgrounds/capa1.jpg" alt="background" id="backgroundImg">
+    </div>
+    <header id="header">
+        <button id="headerMenu" class="headerMenu"><img src="icons/menu-burger.png" alt=""></button>
+        <div id="headerNav">
+            <button id="libraryButton" class="navButtons"><img src="icons/books.png" alt=""></button>
+            <button id="infoButton" class="navButtons"><img src="icons/info.png" alt=""></button>
+            <button id="searchButton" class="navButtons"><img src="icons/search.png" alt=""></button>
+        </div>
+        <div id="relogio" class="clock"></div>    
+        
+    <section class="cardHolder" id="cardHolderDestaquesPs1">
+        <div class="cardHolderTitleBox">
+            <h1>Destaques Playstation1</h1>
+        </div>
+        <div class="cardHolderBox">
+            <button class="card" id="card1"><img src="" alt="" class="card1capa"></button>
+            <button class="card" id="card2"><img src="" alt="" class="card2capa"></button>
+            <button class="card" id="card3"><img src="" alt="" class="card3capa"></button>
+            <button class="card" id="card4"><img src="" alt="" class="card4capa"></button>
+            <button class="card" id="card5"><img src="" alt="" class="card5capa"></button>
+        </div>
+
+        <div class="cardHolderBox">
+            <button class="card" id="card6"><img src="" alt="" class="card6capa"></button>
+            <button class="card" id="card7"><img src="" alt="" class="card7capa"></button>
+            <button class="card" id="card8"><img src="" alt="" class="card8capa"></button>
+            <button class="card" id="card9"><img src="" alt="" class="card9capa"></button>
+            <button class="card" id="card10"><img src="" alt="" class="card10capa"></button>
+        </div>
+    </section>
+
+    <section class="cardHolder" id="cardHolderDestaquesPs2">
+        <div class="cardHolderTitleBox" id="cardHolderTitleBoxPs2">
+            <h1 id="destaquesPs2">Destaques Playstation2</h1>
+        </div>
+        <div class="cardHolderBox">
+            <button class="card cardps2" id="card11Header" tabindex="0"><img src="" alt="" class="card11capa"></button>
+            <button class="card cardps2" id="card12Header" tabindex="0"><img src="" alt="" class="card12capa"></button>
+            <button class="card cardps2" id="card13Header" tabindex="0"><img src="" alt="" class="card13capa"></button>
+            <button class="card cardps2" id="card14Header"><img src="" alt="" class="card14capa"></button>
+            <button class="card cardps2" id="card15Header"><img src="" alt="" class="card15capa"></button>
+        </div>
+
+        <div class="cardHolderBox">
+            <button class="card cardps2" id="card16Header"><img src="" alt="" class="card16capa"></button>
+            <button class="card cardps2" id="card17Header"><img src="" alt="" class="card17capa"></button>
+            <button class="card cardps2" id="card18Header"><img src="" alt="" class="card18capa"></button>
+            <button class="card cardps2" id="card19Header"><img src="" alt="" class="card19capa"></button>
+            <button class="card cardps2" id="card20Header"><img src="" alt="" class="card20capa"></button>
+        </div>
+    </section>
+
+
+        <section class="cardHolder" id="cardHolderDestaquesPs3">
+        <div class="cardHolderTitleBox" id="cardHolderTitleBoxPs2">
+            <h1 id="destaquesPs2">Destaques Playstation3</h1>
+        </div>
+        <div class="cardHolderBox">
+            <button class="card cardps3" id="card21" tabindex="0"><img src="" alt="" class="card21capa"></button>
+            <button class="card cardps3" id="card22" tabindex="0"><img src="" alt="" class="card22capa"></button>
+            <button class="card cardps3" id="card23" tabindex="0"><img src="" alt="" class="card23capa"></button>
+            <button class="card cardps3" id="card24"><img src="" alt="" class="card24capa"></button>
+            <button class="card cardps3" id="card25"><img src="" alt="" class="card25capa"></button>
+        </div>
+
+        <div class="cardHolderBox">
+            <button class="card cardps3" id="card26"><img src="" alt="" class="card26capa"></button>
+            <button class="card cardps3" id="card27"><img src="" alt="" class="card27capa"></button>
+            <button class="card cardps3" id="card28"><img src="" alt="" class="card28capa"></button>
+            <button class="card cardps3" id="card29"><img src="" alt="" class="card29capa"></button>
+            <button class="card cardps3" id="card30"><img src="" alt="" class="card30capa"></button>
+        </div>
+    </section>
+
+
+    <section class="cardHolder" id="cardHolderDestaquesXbox360">
+        <div class="cardHolderTitleBox" id="cardHolderTitleBoxPs2">
+            <h1 id="destaquesPs2">Destaques Xbox360</h1>
+        </div>
+        <div class="cardHolderBox">
+            <button class="card cardxbox360" id="card31" tabindex="0"><img src="" alt="" class="card31capa"></button>
+            <button class="card cardxbox360" id="card32" tabindex="0"><img src="" alt="" class="card32capa"></button>
+            <button class="card cardxbox360" id="card33" tabindex="0"><img src="" alt="" class="card33capa"></button>
+            <button class="card cardxbox360" id="card34"><img src="" alt="" class="card34capa"></button>
+            <button class="card cardxbox360" id="card35"><img src="" alt="" class="card35capa"></button>
+        </div>
+
+        <div class="cardHolderBox">
+            <button class="card cardxbox360" id="card36"><img src="" alt="" class="card36capa"></button>
+            <button class="card cardxbox360" id="card37"><img src="" alt="" class="card37capa"></button>
+            <button class="card cardxbox360" id="card38"><img src="" alt="" class="card38capa"></button>
+            <button class="card cardxbox360" id="card39"><img src="" alt="" class="card39capa"></button>
+            <button class="card cardxbox360" id="card40"><img src="" alt="" class="card40capa"></button>
+        </div>
+    </section>
+
+    </header>
+    <script src="script.js"></script>
+    <script src="joystick.js"></script>
+    <script src="clock.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
+
+
+
