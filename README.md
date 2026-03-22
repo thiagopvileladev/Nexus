@@ -21,7 +21,7 @@ Se você não tiver o node.js instalado na sua máquina, baixe para não ocorrer
 
 ### 2. Instalação
 Link para o google drive do projeto:
-* [Nexus](https://drive.google.com/file/d/1AZuE6RdPmCFKOyZzuPUces9aG_P1yIur/view?usp=sharing) 
+* [Nexus](https://drive.google.com/file/d/1nGd6AcVHqQYxQu00GDr8JpKvMcUVbSiD/view?usp=sharing) 
 
 ---
 
@@ -34,7 +34,7 @@ O site utilizado como fonte dos jogos (**romsfun.com**) possui restrições de s
 
 ### 🚀 Como rodar o Nexus Hub
 1. **Baixe e extraia** o arquivo ZIP do projeto.
-2. Acesse a pasta extraída (normalmente chamada `web_content`).
+2. Acesse a pasta extraída (chamada `web_content`).
 3. Localize e execute o arquivo **`nexus.bat`**. Se preferir, envie um atalho desse arquivo para a área de trabalho, para facilitar o acesso. Tenha em mente que o arquivo nexus.bat seria como um arquivo .exe de um programa convencional.
 
 > **Nota:** O arquivo `.bat` automatiza a inicialização do ambiente, executando o comando `npx electron .` de forma invisível para que você não precise usar o terminal manualmente.
@@ -46,6 +46,7 @@ Ao abrir um jogo pela primeira vez, os emuladores integrados solicitarão uma co
 * Após configurado, é só conectar seu controle e jogar!
 
 ---
+
 
 
 
