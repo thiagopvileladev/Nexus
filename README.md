@@ -11,7 +11,7 @@
 * **Interface Intuitiva:** Navegue pelos seus jogos com capas e descrições.
 * **Integração com Emuladores:** Lança automaticamente o **PCSX2** e o **DuckStation**.
 *  **Integração com site:** Para o download dos jogos, é integrado com o site **ROMSFUN**.
-* **Portabilidade:** Sem a necessidade de configuração avançada para jogar os jogos.
+* **Portabilidade:** Sem a necessidade de configuração avançada para jogar os jogos, além de a possibilidade de navegar no app via controle.
 
 ## 🚀 Como Rodar o Projeto
 
