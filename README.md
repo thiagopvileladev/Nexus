@@ -6,7 +6,7 @@
 ---
 
 ## 📸 Demonstração
-![Print da Interface :]
+Print da Interface :
 <img width="1920" height="1080" alt="print" src="https://github.com/user-attachments/assets/a35b7a1b-56ac-4e4a-aca9-286659f7610c" />
 
 ## ✨ Funcionalidades
