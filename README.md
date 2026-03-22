@@ -30,7 +30,7 @@ Link para o google drive do projeto:
 Diferente de aplicativos convencionais que utilizam um instalador (build final), este projeto foi estruturado para rodar de forma **portátil**. 
 
 ### ⚙️ Por que não existe um instalador (`.exe`)?
-O site utilizado como fonte dos jogos (**romsfun.com**) possui restrições de segurança que bloqueiam requisições vindas de aplicativos compilados. Para contornar essa limitação e manter a simplicidade do projeto, optamos pela **execução direta**. Isso garante que os downloads de arquivos `.iso` e `.chd` funcionem sem interrupções.
+O site utilizado como fonte dos jogos (**romsfun.com**) possui restrições de segurança que bloqueiam requisições vindas de aplicativos compilados. Para contornar essa limitação e manter a simplicidade do projeto, optei pela **execução direta**, ou seja, no terminal powershell. Isso garante que os downloads de arquivos `.iso` e `.chd` funcionem sem interrupções.
 
 ### 🚀 Como rodar o Nexus Hub
 1. **Baixe e extraia** o arquivo ZIP do projeto.
