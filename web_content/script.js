@@ -1,3 +1,4 @@
+document.getElementById('infoButton').inert = true
 
 const catalogo_ps1 = [
     {
