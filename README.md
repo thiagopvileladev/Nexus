@@ -40,12 +40,62 @@ O site utilizado como fonte dos jogos (**romsfun.com**) possui restrições de s
 > **Nota:** O arquivo `.bat` automatiza a inicialização do ambiente, executando o comando `npx electron .` de forma invisível para que você não precise usar o terminal manualmente.
 
 ### 🎮 Sobre os Emuladores (DuckStation e PCSX2)
-Ao abrir um jogo pela primeira vez, os emuladores integrados solicitarão uma configuração inicial rápida:
-* Basta avançar as telas de configuração (**Next/Próximo**) até o final.
-* Este processo é necessário apenas na primeira execução.
-* Após configurado, é só conectar seu controle e jogar!
+Ao abrir um jogo pela primeira vez, os emuladores integrados solicitarão uma configuração inicial rápida.
+Lembrando que é necessário fazer isso apenas uma vez!
 
----
+#### ETAPAS PARA O EMULADOR DE PS1:
+
+
+![print](prints/print2.png)
+
+&nbsp;
+
+![print](prints/print5.png)
+
+&nbsp;
+
+![print](prints/print3.png)
+&nbsp;
+
+![print](prints/print.png)
+&nbsp;
+![print](prints/printzada.png)
+&nbsp;
+![print](prints/print4.png)
+&nbsp;
+![print](prints/print9.png)
+&nbsp;
+### Aqui você deve conectar o controle, ir no mapeamento automático e procurar o controle, se você estiver usando 2 controles, faça a mesma coisa para o mapeamento de baixo.
+&nbsp;
+
+![print](prints/print7.png)
+&nbsp;
+![print](prints/print8.png)
+&nbsp;
+![print](prints/print6.png)
+&nbsp;
+![print](prints/print10.png)
+
+&nbsp;
+&nbsp;
+
+#### ETAPAS PARA O EMULADOR DE PS2:
+&nbsp;
+![print](prints/6.png)
+&nbsp;
+![print](prints/15.png)
+&nbsp;
+![print](prints/teste.png)
+&nbsp;
+![print](prints/9.png)
+&nbsp;
+![print](prints/10.png)
+&nbsp;
+### Aqui é a mesma questão do mapeamento automático.
+&nbsp;
+![print](prints/11.png)
+&nbsp;
+![print](prints/14.png)
 
 
 
