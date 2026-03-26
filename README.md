@@ -21,7 +21,7 @@ Se você não tiver o node.js instalado na sua máquina, baixe para não ocorrer
 
 ### 2. Instalação
 Link para o google drive do projeto:
-* [Nexus](https://drive.google.com/file/d/1nGd6AcVHqQYxQu00GDr8JpKvMcUVbSiD/view?usp=sharing) 
+* [Nexus]([https://drive.google.com/file/d/1nGd6AcVHqQYxQu00GDr8JpKvMcUVbSiD/view?usp=sharing](https://drive.google.com/drive/folders/1QDXbtMueZnKhdbve6xSs31lpFFki-G5b?usp=sharing)) 
 
 ---
 
