@@ -97,6 +97,9 @@ Lembrando que é necessário fazer isso apenas uma vez!
 &nbsp;
 ![print](prints/14.png)
 
+### DICA: Para ficar mais simples de iniciar o nexus, você pode fazer um atalho para a área de trabalho do seu computador.
+
+
 
 
 
